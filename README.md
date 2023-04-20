@@ -31,3 +31,17 @@ curl "http://10.10.5.37:8083/api/promocode/validate" ^
   --data-raw "^{^\^"applicant^\^":^{^\^"personal_details^\^":^{^\^"title^\^":^\^"2^\^",^\^"full_name^\^":^\^"NUR AFINI BINTI SHAMSHUDDIN^\^",^\^"date_of_birth^\^":^\^"1996-03-20^\^",^\^"email^\^":^\^"afini.work.test^@gmail.com^\^",^\^"existing_aeon_product^\^":^\^"0^\^",^\^"residency_status^\^":^\^"B^\^",^\^"gender^\^":^\^"F^\^",^\^"race^\^":^\^"001^\^",^\^"other_race^\^":^\^"^\^",^\^"marital_status^\^":^\^"1^\^",^\^"no_of_dependants^\^":^\^"1^\^",^\^"mobile_phone_number^\^":^\^"(+60)1110029792^\^",^\^"id_type^\^":^\^"1^\^",^\^"id_number^\^":^\^"960320086594^\^",^\^"other_ic_type^\^":^\^"^\^",^\^"other_ic_field^\^":^\^"^\^",^\^"nationality^\^":^\^"MY^\^",^\^"address_line_1^\^":^\^"damnsara^\^",^\^"address_line_2^\^":^\^"^\^",^\^"address_line_3^\^":^\^"^\^",^\^"postcode^\^":^\^"50100^\^",^\^"city^\^":^\^"Kuala Lumpur^\^",^\^"state^\^":^\^"01^\^",^\^"residential_ownership^\^":^\^"R^\^",^\^"years_of_stay^\^":^\^"01.02^\^",^\^"permanent_resident^\^":^\^"1^\^",^\^"permanent_address_1^\^":^\^"damnsara^\^",^\^"permanent_address_3^\^":^\^"^\^",^\^"permanent_postal_code^\^":^\^"50100^\^",^\^"permanent_state^\^":^\^"01^\^",^\^"permanent_city^\^":^\^"Kuala Lumpur^\^",^\^"relationship^\^":^\^"5^\^",^\^"ocr_verified^\^":^[^{^\^"front_id^\^":0,^\^"back_id^\^":0,^\^"passport_id^\^":0^}^]^}^}^}" ^
   --compressed ^
   --insecure
+  
+  NEW
+  
+  curl "http://10.10.5.37:8083/api/param/data-list?lang_code=EN" ^
+  -H "Accept-Language: en-US,en;q=0.9" ^
+  -H "Connection: keep-alive" ^
+  -H "Cookie: XSRF-TOKEN=7c567447-6364-4ab9-96c8-35fed9008478" ^
+  -H "Referer: http://10.10.5.37:8083/loan-detail" ^
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" ^
+  -H "accept: application/json" ^
+  -H "content-type: application/json" ^
+  -H "x-xsrf-token: 7c567447-6364-4ab9-96c8-35fed9008478" ^
+  --compressed ^
+  --insecure
