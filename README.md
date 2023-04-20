@@ -11,3 +11,5 @@ curl "http://10.10.5.37:8083/api/promocode/validate" ^
   --data-raw "^{^\^"promo_code^\^":^\^"GreatFino^\^",^\^"agent_code^\^":^\^"^\^",^\^"tenure^\^":^\^"36^\^",^\^"loan_amount^\^":10000,^\^"min_gross_income^\^":^\^"1500^\^"^}" ^
   --compressed ^
   --insecure
+  
+  02PFON20000000000341
