@@ -45,3 +45,19 @@ curl "http://10.10.5.37:8083/api/promocode/validate" ^
   -H "x-xsrf-token: 7c567447-6364-4ab9-96c8-35fed9008478" ^
   --compressed ^
   --insecure
+  
+  NEW
+  
+  curl "http://10.10.5.37:8083/api/screening/02PFON20000000000369/external" ^
+  -X "POST" ^
+  -H "Accept-Language: en-US,en;q=0.9" ^
+  -H "Connection: keep-alive" ^
+  -H "Content-Length: 0" ^
+  -H "Cookie: XSRF-TOKEN=7c567447-6364-4ab9-96c8-35fed9008478" ^
+  -H "Origin: http://10.10.5.37:8083" ^
+  -H "Referer: http://10.10.5.37:8083/otp" ^
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" ^
+  -H "accept: application/json" ^
+  -H "content-type: application/json" ^
+  -H "x-xsrf-token: 7c567447-6364-4ab9-96c8-35fed9008478" ^
+  --compressed
