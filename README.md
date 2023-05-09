@@ -4,3 +4,5 @@ https://stg-aeon-aip.finology.group?7e3cad31630e31686597f5ba21a13257&02PFON10000
 
 
 http://10.10.5.37:8083/additional-document-upload?83024de6d1698cbc272a29d9c4fbcbd&02PFON20000000000748
+
+http://10.10.5.37:8080/CreditStack/l
