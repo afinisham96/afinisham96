@@ -42,5 +42,29 @@ curl "http://10.10.5.37:8083/api/utils/validate-url" ^
   
   
   http://10.21.30.31:8083/additional-document-upload?11ca6bdfb2053117b4aea2b293796668&02PFON2386F26FDFA67D
+  
+  ![image](https://github.com/afinisham96/afinisham96/assets/131110842/3b918cf9-d1d1-4c4f-95aa-f30c4c2f9893)
+
+curl "http://10.10.5.37:8083/api/utils/validate-url" ^
+  -H "Accept-Language: en-US,en;q=0.9" ^
+  -H "Connection: keep-alive" ^
+  -H "Cookie: XSRF-TOKEN=eaaa852b-3ece-46e8-afe7-633a43b17b64" ^
+  -H "Origin: http://10.10.5.37:8083" ^
+  -H "Referer: http://10.10.5.37:8083/additional-document-upload?e070427d525ad73adc3fc42e9463b1a7&02PFON470DFC283620AF" ^
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" ^
+  -H "accept: application/json" ^
+  -H "content-type: application/json" ^
+  -H "x-xsrf-token: eaaa852b-3ece-46e8-afe7-633a43b17b64" ^
+  --data-raw "^{^\^"caseid^\^":^\^"02PFON470DFC283620AF^\^",^\^"token^\^":^\^"e070427d525ad73adc3fc42e9463b1a7^\^"^}" ^
+  --compressed ^
+  --insecure
+  
+  {errorCode: "400", errorMessage: "{"code":"URL_TKN_400","status":"Invalid Token"}"}
+errorCode
+: 
+"400"
+errorMessage
+: 
+"{\"code\":\"URL_TKN_400\",\"status\":\"Invalid Token\"}"
 
 
