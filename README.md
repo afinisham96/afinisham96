@@ -22,6 +22,8 @@ http://10.10.5.37:8083/additional-document-upload?e070427d525ad73adc3fc42e9463b1
 
 ![image](https://github.com/afinisham96/afinisham96/assets/131110842/8c75e624-f4cc-4e59-95ad-04341c0cc54b)
 
+http://10.10.5.37:8083/additional-document-upload?e070427d525ad73adc3fc42e9463b1a7&02PFON470DFC283620AF
+
 {errorCode: "400", errorMessage: "{"code":"URL_TKN_400","status":"Invalid Token"}"}
 errorCode
 : 
