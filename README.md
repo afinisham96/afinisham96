@@ -12,5 +12,7 @@ http://10.10.5.37:8083/additional-document-upload?ce997e2807845135a54d3bf609df46
 
 http://10.10.5.37:8083/additional-document-upload?b0acb4a71f6dbfec05f23d6b7146ddc3&02PFON470E13709DC7A5 - pass
 
+http://10.10.5.37:8083/additional-document-upload?9657ba2dc27304beabd0f4fa6c1c54cf&02PFON470E4201C8A09B - warning
+
 
 
