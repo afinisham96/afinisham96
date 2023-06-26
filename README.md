@@ -23,5 +23,7 @@ limitation:
     1. no access to case documents
     2. no access to user maintenance
 
+    http://10.10.5.37:8083/additional-document-upload?7560d92c1a86bfb0575acd48a317b0e6&02PFON470E7092A73571
+
 
 
