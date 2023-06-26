@@ -14,5 +14,14 @@ http://10.10.5.37:8083/additional-document-upload?b0acb4a71f6dbfec05f23d6b7146dd
 
 http://10.10.5.37:8083/additional-document-upload?9657ba2dc27304beabd0f4fa6c1c54cf&02PFON470E4201C8A09B - warning
 
+Hi team, the user list provided earlier is now created in STG with the following info:
+
+login id: [STAFFID]
+password: q!l0smD8
+
+limitation:
+    1. no access to case documents
+    2. no access to user maintenance
+
 
 
