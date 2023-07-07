@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?><Response>
+  <Header>
+    <UserID>AIPPF</UserID>
+    <UserGroup>01</UserGroup>
+    <VersionNo>0600</VersionNo>
+    <RespTimestamp>20230704202509</RespTimestamp>
+    <StatusCode>00</StatusCode>
+    <ReservedField/>
+  </Header>
+  <Data>
+    <RefNo>230303100003</RefNo>
+    <ReportType>NANN</ReportType>
+    <CcrisRpt>
+      <Direction>P</Direction>
+      <Errors/>
+      <IDNo>981103045457</IDNo>
+      <IDNo2/>
+      <EntWarning/>
+      <Name>ZAMIR ZAKWAN BIN AB AZIS</Name>
+      <BasicGroup>11</BasicGroup>
+      <DateBR>03/11/1998</DateBR>
+      <Nationality>MY</Nationality>
+      <EntKey>33358568</EntKey>
+      <SummaryRpt>
+        <StatusCode>00</StatusCode>
+        <RptRetrieveFromBNM>N</RptRetrieveFromBNM>
+        <RptRetrievalDate>26/06/2023</RptRetrievalDate>
+        <Errors/>
+        <Messages/>
+        <Data>
+          <Applications>
+            <AppCnt>1</AppCnt>
+            <AppAmt>1,000</AppAmt>
+            <PndCnt>1</PndCnt>
+            <PndAmt>12,000</PndAmt>
+          </Applications>
+          <Liabilities>
+            <Borrower>
+              <AccOut>609</AccOut>
+              <AccTot>1,000</AccTot>
+              <AccFec>0</AccFec>
+            </Borrower>
+            <Guarantor>
+              <CfgTot>0</CfgTot>
+              <CfgFec>0</CfgFec>
+            </Guarantor>
+            <Total>
+              <Tot>1,000</Tot>
+              <Fec>0</Fec>
+            </Total>
+          </Liabilities>
+          <Legal>
+            <Legal>0</Legal>
+          </Legal>
+          <SpecAttn>
+            <SpecAttn>0</SpecAttn>
+          </SpecAttn>
+        </Data>
+        <CcrisSumHit/>
+      </SummaryRpt>
+      <DetailRpt>
+        <StatusCode>00</StatusCode>
+        <RptRetrieveFromBNM>N</RptRetrieveFromBNM>
+        <RptRetrievalDate>26/06/2023</RptRetrievalDate>
+        <Errors/>
+        <Messages/>
+        <Data>
+          <FromYear>2022</FromYear>
+          <ToYear>2023</ToYear>
+          <MonthOrder>
+            <M1>J</M1>
+            <M2>J</M2>
+            <M3>M</M3>
+            <M4>A</M4>
+            <M5>M</M5>
+            <M6>F</M6>
+            <M7>J</M7>
+            <M8>D</M8>
+            <M9>N</M9>
+            <M10>O</M10>
+            <M11>S</M11>
+            <M12>A</M12>
+          </MonthOrder>
+          <Loans>
+            <Loan>
+              <Row>
+                <RowNo>1</RowNo>
+                <Date>28/11/2022</Date>
+                <STS/>
+                <LenderType>CB</LenderType>
+                <MyFgn/>
+                <Capacity>Own</Capacity>
+                <Facility/>
+                <Balance/>
+                <BalanceDate/>
+                <Limit>1,000</Limit>
+                <RepayTerm/>
+                <ColType>00</ColType>
+                <M1/>
+                <M2/>
+                <M3/>
+                <M4/>
+                <M5/>
+                <M6/>
+                <M7/>
+                <M8/>
+                <M9/>
+                <M10/>
+                <M11/>
+                <M12/>
+                <Legal/>
+                <LegalDate/>
+              </Row>
+              <Row>
+                <RowNo>1</RowNo>
+                <Date/>
+                <STS>O</STS>
+                <LenderType/>
+                <MyFgn/>
+                <Capacity/>
+                <Facility>PELNFNCE</Facility>
+                <Balance>609</Balance>
+                <BalanceDate>31/05/2023</BalanceDate>
+                <Limit>97</Limit>
+                <RepayTerm>MTH</RepayTerm>
+                <ColType/>
+                <M1/>
+                <M2/>
+                <M3>1</M3>
+                <M4>1</M4>
+                <M5>1</M5>
+                <M6>1</M6>
+                <M7>0</M7>
+                <M8>0</M8>
+                <M9>0</M9>
+                <M10/>
+                <M11/>
+                <M12/>
+                <Legal/>
+                <LegalDate/>
+              </Row>
+            </Loan>
+          </Loans>
+          <SpecAttnLoans/>
+          <Applications>
+            <Application>
+              <Row>
+                <RowNo>2</RowNo>
+                <Date>28/11/2022</Date>
+                <STS>A</STS>
+                <LenderType>CB</LenderType>
+                <MyFgn/>
+                <Capacity>Own</Capacity>
+                <Facility/>
+                <Balance/>
+                <BalanceDate/>
+                <Limit>1,000</Limit>
+                <RepayTerm/>
+                <ColType/>
+                <M1/>
+                <M2/>
+                <M3/>
+                <M4/>
+                <M5/>
+                <M6/>
+                <M7/>
+                <M8/>
+                <M9/>
+                <M10/>
+                <M11/>
+                <M12/>
+                <Legal/>
+                <LegalDate/>
+              </Row>
+            </Application>
+            <Application>
+              <Row>
+                <RowNo>3</RowNo>
+                <Date>23/06/2023</Date>
+                <STS>P</STS>
+                <LenderType>OWN</LenderType>
+                <MyFgn/>
+                <Capacity>Own</Capacity>
+                <Facility/>
+                <Balance/>
+                <BalanceDate/>
+                <Limit>12,000</Limit>
+                <RepayTerm/>
+                <ColType/>
+                <M1/>
+                <M2/>
+                <M3/>
+                <M4/>
+                <M5/>
+                <M6/>
+                <M7/>
+                <M8/>
+                <M9/>
+                <M10/>
+                <M11/>
+                <M12/>
+                <Legal/>
+                <LegalDate/>
+              </Row>
+            </Application>
+          </Applications>
+          <Totals>
+            <LimTot>1,000</LimTot>
+            <BalTot>609</BalTot>
+          </Totals>
+        </Data>
+        <DerivedVariables>
+          <char015>0</char015>
+          <char016>0</char016>
+          <char029>3</char029>
+          <char041>8</char041>
+          <char055>100.00</char055>
+          <char062>60.90</char062>
+          <char124>MV07: NoParticularTL</char124>
+          <char126>MV07: NoParticularTL</char126>
+          <char188>MV07: NoParticularTL</char188>
+          <char255>1</char255>
+          <char261>1</char261>
+          <char448>MV07: NoParticularTL</char448>
+          <char531>1</char531>
+          <char693>1</char693>
+          <char002>8</char002>
+          <char005>1</char005>
+          <char034>1</char034>
+          <char038>1</char038>
+          <char470>MV07 - No Secured Facility</char470>
+          <char492>MV07 - No Secured Facility</char492>
+          <char510>1</char510>
+          <char697>0</char697>
+          <char699>0</char699>
+        </DerivedVariables>
+        <CcrisDtlHit/>
+      </DetailRpt>
+      <SupplementaryRpt>
+        <StatusCode>00</StatusCode>
+        <RptRetrieveFromBNM>N</RptRetrieveFromBNM>
+        <RptRetrievalDate>26/06/2023</RptRetrievalDate>
+        <Errors/>
+        <Messages/>
+        <Data>
+          <Addresses>
+            <Address>
+              <Entity>33358568</Entity>
+              <Address1/>
+              <Address2/>
+              <Address3/>
+              <Address4/>
+              <Address5/>
+              <Address6>PULAU PINANG</Address6>
+              <LongAddress>PULAU PINANG</LongAddress>
+              <State_Code>07</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>11600</Post_Code>
+              <Org_Code>3905</Org_Code>
+              <Branch>14011</Branch>
+              <Application/>
+              <Create_Date>26/06/2023</Create_Date>
+            </Address>
+            <Address>
+              <Entity>33358568</Entity>
+              <Address1/>
+              <Address2/>
+              <Address3/>
+              <Address4/>
+              <Address5/>
+              <Address6>PULAU PINANG</Address6>
+              <LongAddress>PULAU PINANG</LongAddress>
+              <State_Code>07</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>11600</Post_Code>
+              <Org_Code>0344</Org_Code>
+              <Branch>07148</Branch>
+              <Application/>
+              <Create_Date>18/05/2023</Create_Date>
+            </Address>
+            <Address>
+              <Entity>33358568</Entity>
+              <Address1/>
+              <Address2/>
+              <Address3/>
+              <Address4/>
+              <Address5/>
+              <Address6>PULAU PINANG</Address6>
+              <LongAddress>PULAU PINANG</LongAddress>
+              <State_Code>07</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>11600</Post_Code>
+              <Org_Code>0343</Org_Code>
+              <Branch>14013</Branch>
+              <Application/>
+              <Create_Date>17/05/2023</Create_Date>
+            </Address>
+            <Address>
+              <Entity>33358568</Entity>
+              <Address1>548 MK 3</Address1>
+              <Address2>SUNGAI RUSA</Address2>
+              <Address3/>
+              <Address4>BALIK PULAU</Address4>
+              <Address5/>
+              <Address6>PULAU PINANG</Address6>
+              <LongAddress>548 MK 3, SUNGAI RUSA, BALIK PULAU, PULAU PINANG</LongAddress>
+              <State_Code>07</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>11010</Post_Code>
+              <Org_Code>0235</Org_Code>
+              <Branch>14133</Branch>
+              <Application>ALS</Application>
+              <Create_Date>07/12/2022</Create_Date>
+            </Address>
+            <Address>
+              <Entity>33358568</Entity>
+              <Address1>548 MK 3</Address1>
+              <Address2>SUNGAI RUSA</Address2>
+              <Address3/>
+              <Address4/>
+              <Address5/>
+              <Address6>PULAU PINANG</Address6>
+              <LongAddress>548 MK 3, SUNGAI RUSA, PULAU PINANG</LongAddress>
+              <State_Code>07</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>11010</Post_Code>
+              <Org_Code>EDB</Org_Code>
+              <Branch>JPN</Branch>
+              <Application/>
+              <Create_Date>29/11/2022</Create_Date>
+            </Address>
+            <Address>
+              <Entity>33358568</Entity>
+              <Address1/>
+              <Address2/>
+              <Address3/>
+              <Address4/>
+              <Address5/>
+              <Address6>PULAU PINANG</Address6>
+              <LongAddress>PULAU PINANG</LongAddress>
+              <State_Code>07</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>11010</Post_Code>
+              <Org_Code>0235</Org_Code>
+              <Branch>14003</Branch>
+              <Application/>
+              <Create_Date>28/11/2022</Create_Date>
+            </Address>
+          </Addresses>
+          <Contacts>
+            <Contact>
+              <Entity>33358568</Entity>
+              <Contact_Type>CNT</Contact_Type>
+              <ISD_Code>0</ISD_Code>
+              <Prefix>0</Prefix>
+              <Phone_no>0195571293</Phone_no>
+              <Org_code>0235</Org_code>
+              <Branch>14133</Branch>
+              <Application>ALS</Application>
+              <Create_Date>07/12/2022</Create_Date>
+            </Contact>
+            <Contact>
+              <Entity>33358568</Entity>
+              <Contact_Type>CNT</Contact_Type>
+              <ISD_Code>0</ISD_Code>
+              <Prefix>0</Prefix>
+              <Phone_no>2944852</Phone_no>
+              <Org_code>0235</Org_code>
+              <Branch>14133</Branch>
+              <Application>ALS</Application>
+              <Create_Date>07/12/2022</Create_Date>
+            </Contact>
+          </Contacts>
+          <Occupations>
+            <Occupation>
+              <Entity>33358568</Entity>
+              <Occ_Type>113</Occ_Type>
+              <Occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</Occupation>
+              <Employer>KFF PLT</Employer>
+              <Grs_income>0</Grs_income>
+              <Freq_code/>
+              <Currency/>
+              <from_Date/>
+              <to_Date/>
+              <Org_code>3905</Org_code>
+              <Branch>14011</Branch>
+              <Application/>
+              <Create_Date>26/06/2023</Create_Date>
+            </Occupation>
+            <Occupation>
+              <Entity>33358568</Entity>
+              <Occ_Type>113</Occ_Type>
+              <Occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</Occupation>
+              <Employer>KFF PLT</Employer>
+              <Grs_income>0</Grs_income>
+              <Freq_code/>
+              <Currency/>
+              <from_Date/>
+              <to_Date/>
+              <Org_code>0344</Org_code>
+              <Branch>07148</Branch>
+              <Application/>
+              <Create_Date>18/05/2023</Create_Date>
+            </Occupation>
+            <Occupation>
+              <Entity>33358568</Entity>
+              <Occ_Type>113</Occ_Type>
+              <Occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</Occupation>
+              <Employer>KFF PLT</Employer>
+              <Grs_income>0</Grs_income>
+              <Freq_code/>
+              <Currency/>
+              <from_Date/>
+              <to_Date/>
+              <Org_code>0343</Org_code>
+              <Branch>14013</Branch>
+              <Application/>
+              <Create_Date>17/05/2023</Create_Date>
+            </Occupation>
+            <Occupation>
+              <Entity>33358568</Entity>
+              <Occ_Type>113</Occ_Type>
+              <Occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</Occupation>
+              <Employer>QATTA HOLDING SDN BHD</Employer>
+              <Grs_income>0</Grs_income>
+              <Freq_code/>
+              <Currency/>
+              <from_Date/>
+              <to_Date/>
+              <Org_code>EDB</Org_code>
+              <Branch>0235</Branch>
+              <Application/>
+              <Create_Date>28/11/2022</Create_Date>
+            </Occupation>
+            <Occupation>
+              <Entity>33358568</Entity>
+              <Occ_Type>113</Occ_Type>
+              <Occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</Occupation>
+              <Employer>QATTA HOLDING SDN BHD</Employer>
+              <Grs_income>0</Grs_income>
+              <Freq_code/>
+              <Currency/>
+              <from_Date/>
+              <to_Date/>
+              <Org_code>0235</Org_code>
+              <Branch>14003</Branch>
+              <Application/>
+              <Create_Date>28/11/2022</Create_Date>
+            </Occupation>
+          </Occupations>
+          <SpecialName/>
+        </Data>
+      </SupplementaryRpt>
+    </CcrisRpt>
+    <CtosRpt>
+      <CtosScoreRank>F</CtosScoreRank>
+      <Direction>P</Direction>
+      <Errors/>
+      <CtosHit/>
+      <report xmlns="http://ws.cmctos.com.my/ctosnet/response" version="4.1.0">
+        <enq_report xmlns="" id="BB-3407-20230626160959" report_type="CTOS" title="CTOS ENQUIRY">
+          <header>
+            <user id="xml_acsc2">AEON - XML TRANSACTION</user>
+            <company id="ACSC">AEON CREDIT SERVICE  (M) BHD XML TRANSACTION</company>
+            <account>ACSC02</account>
+            <tel/>
+            <fax/>
+            <enq_date>2023-06-26</enq_date>
+            <enq_time>16:09:59</enq_time>
+            <enq_status code="1">SUCCESS</enq_status>
+          </header>
+          <summary>
+            <enq_sum pcode="11" ptype="I" seq="1">
+              <name>ZAMIR ZAKWAN BIN AB AZIS</name>
+              <ic_lcno/>
+              <nic_brno>981103045457</nic_brno>
+              <stat>0000</stat>
+              <dd_index>0000</dd_index>
+              <fico_index score="528">
+                <fico_factor code="D8">There is serious delinquency on the accounts, adverse record or collection filed on the credit report.</fico_factor>
+                <fico_factor code="A1">Accounts last reported are in delinquent status on credit report.</fico_factor>
+                <fico_factor code="M1">Number of accounts with delinquency on the credit report is high relative to the other applicants scored.</fico_factor>
+                <fico_factor code="G1">Lack of recent revolving/charge account information on the credit report.</fico_factor>
+              </fico_index>
+              <mphone_nos>
+                <mphone_no>195571293</mphone_no>
+              </mphone_nos>
+              <ref_no>23062301731</ref_no>
+              <dist_code/>
+              <purpose code="200">Credit evaluation/account opening on subject/directors/shareholder with consent /due diligence on AMLA compliance</purpose>
+              <include_ctos>1</include_ctos>
+              <include_trex>1</include_trex>
+              <include_ccris sum="0">1</include_ccris>
+              <include_dcheq>0</include_dcheq>
+              <include_ccris_supp>1</include_ccris_supp>
+              <include_fico>1</include_fico>
+              <confirm_entity>33358568</confirm_entity>
+              <enq_status code="1">SUCCESS</enq_status>
+              <enq_code code="4">CTOS FICO Report</enq_code>
+            </enq_sum>
+          </summary>
+          <enquiry seq="1">
+            <section_summary>
+              <ctos>
+                <bankruptcy status="0"/>
+                <legal total="0" value="0"/>
+                <legal_personal_capacity total="0" value="0"/>
+                <legal_non_personal_capacity total="0" value="0"/>
+              </ctos>
+              <tr>
+                <trex_ref negative="1" positive="0"/>
+              </tr>
+              <ccris>
+                <application approved="1" pending="1" total="2"/>
+                <facility arrears="1" total="1" value="609.00"/>
+                <special_attention accounts="0"/>
+              </ccris>
+              <dcheqs entity="0"/>
+            </section_summary>
+            <section_a data="true" title="SECTION A - IDENTITY NUMBER VERIFICATION">
+              <record rpttype="Id" seq="1">
+                <name match="1">ZAMIR ZAKWAN BIN AB AZIS</name>
+                <ic_lcno/>
+                <nic_brno match="1">981103045457</nic_brno>
+                <addr>PULAU PINANG</addr>
+                <addr1>PULAU PINANG</addr1>
+                <ccris_addresses>
+                  <ccris_address date="26-06-2023">PULAU PINANG</ccris_address>
+                  <ccris_address date="18-05-2023">PULAU PINANG</ccris_address>
+                  <ccris_address date="17-05-2023">PULAU PINANG</ccris_address>
+                  <ccris_address date="07-12-2022">548 MK 3, SUNGAI RUSA, BALIK PULAU, PULAU PINANG</ccris_address>
+                  <ccris_address date="29-11-2022">548 MK 3, SUNGAI RUSA, PULAU PINANG</ccris_address>
+                  <ccris_address date="28-11-2022">PULAU PINANG</ccris_address>
+                </ccris_addresses>
+                <source>CCRIS</source>
+                <nationality>MALAYSIA</nationality>
+                <birth_date>03-11-1998</birth_date>
+              </record>
+            </section_a>
+            <section_b data="true" title="SECTION B - INTERNAL LIST">
+              <history rpttype="EH" seq="1" year="2023">
+                <period month="1">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="1"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="2">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="3">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="1"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="4">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="1"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="5">
+                  <entity type="FI" value="1"/>
+                  <entity type="NON-FI" value="2"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="6">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="2"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="7">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="8">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="9">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="10">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="11">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="12">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+              </history>
+              <history rpttype="EH" seq="2" year="2022">
+                <period month="1">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="2">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="1"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="3">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="4">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="5">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="6">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="7">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="8">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="9">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="10">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="11">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="1"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="12">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+              </history>
+            </section_b>
+            <section_c data="false" title="SECTION C - DIRECTORSHIPS AND BUSINESS INTERESTS"/>
+            <section_d data="false" title="SECTION D"/>
+            <section_d2 data="false" title="SECTION D2 - SUBJECT AS PLAINTIFF"/>
+            <section_ccris data="true" title="SECTION CCRIS">
+              <summary entity_key="33358568" entity_warning="" fi_code="3905">
+                <application>
+                  <approved count="1">1000.00</approved>
+                  <pending count="1">12000.00</pending>
+                </application>
+                <liabilities>
+                  <borrower fec_limit="0.00" total_limit="1000.00">609.00</borrower>
+                  <guarantor/>
+                </liabilities>
+                <legal status="0"/>
+                <special_attention status="0"/>
+                <special_name status="0"/>
+              </summary>
+              <derivatives>
+                <application>
+                  <date>28-11-2022</date>
+                  <facility code="PELNFNCE">Personal Loans/Financing</facility>
+                </application>
+                <facilities>
+                  <secure total="0">
+                    <outstanding average="0.0" limit="0">0</outstanding>
+                  </secure>
+                  <unsecure total="1">
+                    <outstanding average="1.0" limit="60">609</outstanding>
+                  </unsecure>
+                </facilities>
+              </derivatives>
+              <applications>
+                <application>
+                  <org1/>
+                  <org2/>
+                  <adta_id>169188772</adta_id>
+                  <date>28-11-2022</date>
+                  <app_type>N</app_type>
+                  <status code="A">Approved by FI</status>
+                  <capacity code="Own">The loan is for this customer only</capacity>
+                  <lender_type code="CB">Commercial bank and Islamic bank</lender_type>
+                  <my_fgn/>
+                  <amount>1000</amount>
+                </application>
+                <application>
+                  <org1/>
+                  <org2/>
+                  <adta_id>175991971</adta_id>
+                  <date>23-06-2023</date>
+                  <app_type>N</app_type>
+                  <status code="P">Pending decision by FI</status>
+                  <capacity code="Own">The loan is for this customer only</capacity>
+                  <lender_type code="Own">Own Institution</lender_type>
+                  <my_fgn/>
+                  <amount>12000</amount>
+                </application>
+              </applications>
+              <accounts>
+                <account>
+                  <org1/>
+                  <org2/>
+                  <mdta_id>123468804</mdta_id>
+                  <my_fgn/>
+                  <approval_date>28-11-2022</approval_date>
+                  <capacity code="Own">The loan is for this customer only</capacity>
+                  <lender_type code="CB">Commercial bank and Islamic bank</lender_type>
+                  <limit>1000</limit>
+                  <collaterals>
+                    <collateral code="00">
+                      <name>Clean</name>
+                      <value>0</value>
+                    </collateral>
+                  </collaterals>
+                  <legal>
+                    <date/>
+                  </legal>
+                  <sub_accounts>
+                    <sub_account>
+                      <facility code="PELNFNCE">Personal Loans/Financing</facility>
+                      <repay_term code="MTH">Monthly</repay_term>
+                      <collaterals/>
+                      <cr_positions>
+                        <cr_position>
+                          <status code="O">Outstanding</status>
+                          <balance>609</balance>
+                          <position_date>31-05-2023</position_date>
+                          <inst_arrears>1</inst_arrears>
+                          <mon_arrears>0</mon_arrears>
+                          <inst_amount>97</inst_amount>
+                          <rescheduled_date/>
+                          <restructured_date/>
+                        </cr_position>
+                        <cr_position>
+                          <status/>
+                          <balance/>
+                          <position_date>30-04-2023</position_date>
+                          <inst_arrears>1</inst_arrears>
+                          <mon_arrears/>
+                          <inst_amount>97</inst_amount>
+                          <rescheduled_date/>
+                          <restructured_date/>
+                        </cr_position>
+                        <cr_position>
+                          <status/>
+                          <balance/>
+                          <position_date>31-03-2023</position_date>
+                          <inst_arrears>1</inst_arrears>
+                          <mon_arrears/>
+                          <inst_amount>97</inst_amount>
+                          <rescheduled_date/>
+                          <restructured_date/>
+                        </cr_position>
+                        <cr_position>
+                          <status/>
+                          <balance/>
+                          <position_date>28-02-2023</position_date>
+                          <inst_arrears>1</inst_arrears>
+                          <mon_arrears/>
+                          <inst_amount>97</inst_amount>
+                          <rescheduled_date/>
+                          <restructured_date/>
+                        </cr_position>
+                        <cr_position>
+                          <status/>
+                          <balance/>
+                          <position_date>31-01-2023</position_date>
+                          <inst_arrears>0</inst_arrears>
+                          <mon_arrears/>
+                          <inst_amount>97</inst_amount>
+                          <rescheduled_date/>
+                          <restructured_date/>
+                        </cr_position>
+                        <cr_position>
+                          <status/>
+                          <balance/>
+                          <position_date>31-12-2022</position_date>
+                          <inst_arrears>0</inst_arrears>
+                          <mon_arrears/>
+                          <inst_amount>97</inst_amount>
+                          <rescheduled_date/>
+                          <restructured_date/>
+                        </cr_position>
+                        <cr_position>
+                          <status/>
+                          <balance/>
+                          <position_date>30-11-2022</position_date>
+                          <inst_arrears>0</inst_arrears>
+                          <mon_arrears/>
+                          <inst_amount>97</inst_amount>
+                          <rescheduled_date/>
+                          <restructured_date/>
+                        </cr_position>
+                      </cr_positions>
+                    </sub_account>
+                  </sub_accounts>
+                </account>
+              </accounts>
+              <special_attention_accs/>
+            </section_ccris>
+            <section_dcheqs data="false" title=""/>
+            <section_ccris_supp data="true" title="SECTION CCRIS SUPPLEMENTARY">
+              <addresses>
+                <address>
+                  <address1/>
+                  <address2/>
+                  <address3/>
+                  <address4/>
+                  <address5/>
+                  <address6>PULAU PINANG</address6>
+                  <long_address>PULAU PINANG</long_address>
+                  <state_code>07</state_code>
+                  <country>Malaysia</country>
+                  <post_code>11600</post_code>
+                  <org code="3905"/>
+                  <branch code="14011"/>
+                  <application code=""/>
+                  <create_date>26-06-2023</create_date>
+                </address>
+                <address>
+                  <address1/>
+                  <address2/>
+                  <address3/>
+                  <address4/>
+                  <address5/>
+                  <address6>PULAU PINANG</address6>
+                  <long_address>PULAU PINANG</long_address>
+                  <state_code>07</state_code>
+                  <country>Malaysia</country>
+                  <post_code>11600</post_code>
+                  <org code="0344"/>
+                  <branch code="07148"/>
+                  <application code=""/>
+                  <create_date>18-05-2023</create_date>
+                </address>
+                <address>
+                  <address1/>
+                  <address2/>
+                  <address3/>
+                  <address4/>
+                  <address5/>
+                  <address6>PULAU PINANG</address6>
+                  <long_address>PULAU PINANG</long_address>
+                  <state_code>07</state_code>
+                  <country>Malaysia</country>
+                  <post_code>11600</post_code>
+                  <org code="0343"/>
+                  <branch code="14013"/>
+                  <application code=""/>
+                  <create_date>17-05-2023</create_date>
+                </address>
+                <address>
+                  <address1>548 MK 3</address1>
+                  <address2>SUNGAI RUSA</address2>
+                  <address3/>
+                  <address4>BALIK PULAU</address4>
+                  <address5/>
+                  <address6>PULAU PINANG</address6>
+                  <long_address>548 MK 3, SUNGAI RUSA, BALIK PULAU, PULAU PINANG</long_address>
+                  <state_code>07</state_code>
+                  <country>Malaysia</country>
+                  <post_code>11010</post_code>
+                  <org code="0235"/>
+                  <branch code="14133"/>
+                  <application code="ALS"/>
+                  <create_date>07-12-2022</create_date>
+                </address>
+                <address>
+                  <address1>548 MK 3</address1>
+                  <address2>SUNGAI RUSA</address2>
+                  <address3/>
+                  <address4/>
+                  <address5/>
+                  <address6>PULAU PINANG</address6>
+                  <long_address>548 MK 3, SUNGAI RUSA, PULAU PINANG</long_address>
+                  <state_code>07</state_code>
+                  <country>Malaysia</country>
+                  <post_code>11010</post_code>
+                  <org code="EDB"/>
+                  <branch code="JPN"/>
+                  <application code=""/>
+                  <create_date>29-11-2022</create_date>
+                </address>
+                <address>
+                  <address1/>
+                  <address2/>
+                  <address3/>
+                  <address4/>
+                  <address5/>
+                  <address6>PULAU PINANG</address6>
+                  <long_address>PULAU PINANG</long_address>
+                  <state_code>07</state_code>
+                  <country>Malaysia</country>
+                  <post_code>11010</post_code>
+                  <org code="0235"/>
+                  <branch code="14003"/>
+                  <application code=""/>
+                  <create_date>28-11-2022</create_date>
+                </address>
+              </addresses>
+              <contacts>
+                <contact>
+                  <contact_type>CNT</contact_type>
+                  <isd_code>0</isd_code>
+                  <prefix>0</prefix>
+                  <phone_no>0195571293</phone_no>
+                  <org code="0235"/>
+                  <branch code="14133"/>
+                  <application code="ALS"/>
+                  <create_date>07-12-2022</create_date>
+                </contact>
+                <contact>
+                  <contact_type>CNT</contact_type>
+                  <isd_code>0</isd_code>
+                  <prefix>0</prefix>
+                  <phone_no>2944852</phone_no>
+                  <org code="0235"/>
+                  <branch code="14133"/>
+                  <application code="ALS"/>
+                  <create_date>07-12-2022</create_date>
+                </contact>
+              </contacts>
+              <occupations>
+                <occupation>
+                  <occ_type>113</occ_type>
+                  <occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</occupation>
+                  <employer>KFF PLT</employer>
+                  <from_date/>
+                  <to_date/>
+                  <org code="3905"/>
+                  <branch code="14011"/>
+                  <application code=""/>
+                  <create_date>26-06-2023</create_date>
+                </occupation>
+                <occupation>
+                  <occ_type>113</occ_type>
+                  <occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</occupation>
+                  <employer>KFF PLT</employer>
+                  <from_date/>
+                  <to_date/>
+                  <org code="0344"/>
+                  <branch code="07148"/>
+                  <application code=""/>
+                  <create_date>18-05-2023</create_date>
+                </occupation>
+                <occupation>
+                  <occ_type>113</occ_type>
+                  <occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</occupation>
+                  <employer>KFF PLT</employer>
+                  <from_date/>
+                  <to_date/>
+                  <org code="0343"/>
+                  <branch code="14013"/>
+                  <application code=""/>
+                  <create_date>17-05-2023</create_date>
+                </occupation>
+                <occupation>
+                  <occ_type>113</occ_type>
+                  <occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</occupation>
+                  <employer>QATTA HOLDING SDN BHD</employer>
+                  <from_date/>
+                  <to_date/>
+                  <org code="EDB"/>
+                  <branch code="0235"/>
+                  <application code=""/>
+                  <create_date>28-11-2022</create_date>
+                </occupation>
+                <occupation>
+                  <occ_type>113</occ_type>
+                  <occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</occupation>
+                  <employer>QATTA HOLDING SDN BHD</employer>
+                  <from_date/>
+                  <to_date/>
+                  <org code="0235"/>
+                  <branch code="14003"/>
+                  <application code=""/>
+                  <create_date>28-11-2022</create_date>
+                </occupation>
+              </occupations>
+            </section_ccris_supp>
+          </enquiry>
+        </enq_report>
+        <trex xmlns="" status="1">
+          <subject_request>
+            <party_type>I</party_type>
+            <name>ZAMIR ZAKWAN BIN AB AZIS</name>
+            <iclc/>
+            <nicbr>981103045457</nicbr>
+            <date_requested>26-06-2023 16:09:59</date_requested>
+            <date_completed>26-06-2023 16:09:59</date_completed>
+            <requester_id/>
+            <requester_name/>
+            <requester_comp_code>ACSC</requester_comp_code>
+            <requester_account>ACSC02</requester_account>
+          </subject_request>
+        </trex>
+        <eil_report xmlns="" status="0">
+          <eil_request>
+            <party_type>I</party_type>
+            <name>ZAMIR ZAKWAN BIN AB AZIS</name>
+            <iclc/>
+            <nicbr>981103045457</nicbr>
+            <date_requested>26-06-2023 16:10:00</date_requested>
+            <date_completed>26-06-2023 16:10:00</date_completed>
+            <requester_id>xml_acsc2</requester_id>
+            <requester_name>AEON - XML TRANSACTION</requester_name>
+            <requester_comp_code>ACSC</requester_comp_code>
+            <requester_comp_name>AEON CREDIT SERVICE  (M) BHD XML TRANSACTION</requester_comp_name>
+            <requester_account>ACSC02</requester_account>
+          </eil_request>
+        </eil_report>
+        <tr_report xmlns="" preview="0" title="Trade Reference" type="TR">
+          <header>
+            <date>2023-06-26</date>
+            <req_name>AEON - XML TRANSACTION</req_name>
+            <req_email/>
+            <req_com_name>AEON CREDIT SERVICE  (M) BHD XML TRANSACTION</req_com_name>
+            <req_com_addr/>
+            <ref_com_name>LIM KOK TONG MOTORS SDN BHD</ref_com_name>
+            <ref_email/>
+            <ref_com_bus>MOTORCYCLES DEALER</ref_com_bus>
+            <report_no>BB-3407-20230626160959</report_no>
+            <ic_lcno/>
+            <nic_brno>981103045457</nic_brno>
+            <name>ZAMIR ZAKWAN BIN AB AZIS</name>
+          </header>
+          <enquiry account_no="R001435">
+            <section id="relationship">
+              <data name="rel_type">Hire Purchase Customer</data>
+              <data name="rel_status">None</data>
+              <data name="account_no">R001435</data>
+              <data name="rel_syear"/>
+              <data name="rel_smonth"/>
+              <data name="rel_sday"/>
+            </section>
+            <section id="sponsor">
+              <record seq="1">
+                <data name="ic_lcno"/>
+                <data name="nic_brno">981103045457</data>
+                <data name="name">ZAMIR ZAKWAN BIN AB AZIS</data>
+                <data name="date"/>
+                <data name="type">Guarantor</data>
+                <data name="guarantor">0</data>
+                <data name="selected"/>
+                <data name="email"/>
+              </record>
+            </section>
+            <section id="account_status">
+              <data name="account_no">R001435</data>
+              <data name="statement_date">2019-11-19</data>
+              <data name="account_rating">0</data>
+              <data name="account_term">0</data>
+              <data name="account_limit">0</data>
+              <data name="account_status">None</data>
+              <data name="debtor_name"/>
+              <data name="debtor_ic_lcno"/>
+              <data name="debtor_nic_brno"/>
+              <data name="address"/>
+              <data name="debt_type">Others</data>
+              <data name="age">
+                <item name="30">0.00</item>
+                <item name="60">0.00</item>
+                <item name="90">387.00</item>
+                <item name="120">129.00</item>
+                <item name="150">0.00</item>
+                <item name="180">0.00</item>
+                <item name="210">0.00</item>
+              </data>
+            </section>
+            <section id="return_cheque" status="Not Provided"/>
+            <section id="legal_action" status="Not Provided"/>
+            <section id="cra_comment">
+              <data name="cra_status_id"/>
+              <data name="cra_status"/>
+              <data name="cra_status_desc"/>
+              <data name="cra_comment"/>
+            </section>
+            <section id="subject_comment">
+              <data name="subject_comment"/>
+            </section>
+            <section id="contact">
+              <data name="reference"/>
+              <data name="name"/>
+              <data name="address">N0 15, PEKAN TANAH MERAH PENDANG KEDAH</data>
+              <data name="tel_no">04-7591279</data>
+              <data name="fax_no">04--7595701</data>
+              <data name="email"/>
+              <data name="type_code">4</data>
+              <data name="type_desc">Please ask the subject to contact us.</data>
+            </section>
+          </enquiry>
+        </tr_report>
+      </report>
+    </CtosRpt>
+    <FisRpt>
+      <Direction>P</Direction>
+      <Errors/>
+      <FisHit/>
+    </FisRpt>
+    <RamciRpt>
+      <Direction>P</Direction>
+      <RamciHit/>
+      <Errors/>
+    </RamciRpt>
+  </Data>
+</Response>

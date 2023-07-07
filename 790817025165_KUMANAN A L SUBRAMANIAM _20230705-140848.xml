@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?><Response>
+  <Header>
+    <UserID>AIPPF</UserID>
+    <UserGroup>01</UserGroup>
+    <VersionNo>0600</VersionNo>
+    <RespTimestamp>20230705140848</RespTimestamp>
+    <StatusCode>00</StatusCode>
+    <ReservedField/>
+  </Header>
+  <Data>
+    <RefNo>230303100003</RefNo>
+    <ReportType>NANN</ReportType>
+    <CcrisRpt>
+      <Direction>P</Direction>
+      <Errors/>
+      <IDNo>790817025165</IDNo>
+      <IDNo2/>
+      <EntWarning/>
+      <Name>KUMANAN A/L SUBRAMANIAM</Name>
+      <BasicGroup>11</BasicGroup>
+      <DateBR>17/08/1979</DateBR>
+      <Nationality>MY</Nationality>
+      <EntKey>19790374</EntKey>
+      <SummaryRpt>
+        <StatusCode>00</StatusCode>
+        <RptRetrieveFromBNM>N</RptRetrieveFromBNM>
+        <RptRetrievalDate>27/06/2023</RptRetrievalDate>
+        <Errors/>
+        <Messages/>
+        <Data>
+          <Applications>
+            <AppCnt>0</AppCnt>
+            <AppAmt>0</AppAmt>
+            <PndCnt>0</PndCnt>
+            <PndAmt>0</PndAmt>
+          </Applications>
+          <Liabilities>
+            <Borrower>
+              <AccOut>0</AccOut>
+              <AccTot>0</AccTot>
+              <AccFec>0</AccFec>
+            </Borrower>
+            <Guarantor>
+              <CfgTot>0</CfgTot>
+              <CfgFec>0</CfgFec>
+            </Guarantor>
+            <Total>
+              <Tot>0</Tot>
+              <Fec>0</Fec>
+            </Total>
+          </Liabilities>
+          <Legal>
+            <Legal>1</Legal>
+          </Legal>
+          <SpecAttn>
+            <SpecAttn>1</SpecAttn>
+          </SpecAttn>
+        </Data>
+        <CcrisSumHit/>
+      </SummaryRpt>
+      <DetailRpt>
+        <StatusCode>00</StatusCode>
+        <RptRetrieveFromBNM>N</RptRetrieveFromBNM>
+        <RptRetrievalDate>27/06/2023</RptRetrievalDate>
+        <Errors/>
+        <Messages/>
+        <Data>
+          <FromYear>2022</FromYear>
+          <ToYear>2023</ToYear>
+          <MonthOrder>
+            <M1>J</M1>
+            <M2>J</M2>
+            <M3>M</M3>
+            <M4>A</M4>
+            <M5>M</M5>
+            <M6>F</M6>
+            <M7>J</M7>
+            <M8>D</M8>
+            <M9>N</M9>
+            <M10>O</M10>
+            <M11>S</M11>
+            <M12>A</M12>
+          </MonthOrder>
+          <Loans/>
+          <SpecAttnLoans>
+            <SpecAttn>
+              <Row>
+                <RowNo>1</RowNo>
+                <Date>03/03/2011</Date>
+                <STS/>
+                <LenderType>CB</LenderType>
+                <MyFgn/>
+                <Capacity>Own</Capacity>
+                <Facility/>
+                <Balance/>
+                <BalanceDate/>
+                <Limit/>
+                <RepayTerm/>
+                <ColType/>
+                <M1/>
+                <M2/>
+                <M3/>
+                <M4/>
+                <M5/>
+                <M6/>
+                <M7/>
+                <M8/>
+                <M9/>
+                <M10/>
+                <M11/>
+                <M12/>
+                <Legal>15</Legal>
+                <LegalDate>30/11/2022</LegalDate>
+              </Row>
+              <Row>
+                <RowNo>1</RowNo>
+                <Date/>
+                <STS/>
+                <LenderType/>
+                <MyFgn/>
+                <Capacity/>
+                <Facility>PCPASCAR</Facility>
+                <Balance/>
+                <BalanceDate>31/05/2023</BalanceDate>
+                <Limit/>
+                <RepayTerm/>
+                <ColType/>
+                <M1/>
+                <M2/>
+                <M3/>
+                <M4/>
+                <M5/>
+                <M6/>
+                <M7/>
+                <M8/>
+                <M9/>
+                <M10/>
+                <M11/>
+                <M12/>
+                <Legal/>
+                <LegalDate/>
+              </Row>
+            </SpecAttn>
+          </SpecAttnLoans>
+          <Applications/>
+          <Totals>
+            <LimTot>0</LimTot>
+            <BalTot>0</BalTot>
+          </Totals>
+        </Data>
+        <DerivedVariables>
+          <char015>MV09: NoLvActHasSplAtt</char015>
+          <char016>MV09: NoLvActHasSplAtt</char016>
+          <char029>MV09: NoLvActHasSplAtt</char029>
+          <char041>MV09: NoLvActHasSplAtt</char041>
+          <char055>MV09: NoLvActHasSplAtt</char055>
+          <char062>MV09: NoLvActHasSplAtt</char062>
+          <char124>MV09: NoLvActHasSplAtt</char124>
+          <char126>MV09: NoLvActHasSplAtt</char126>
+          <char188>MV09: NoLvActHasSplAtt</char188>
+          <char255>MV09: NoLvActHasSplAtt</char255>
+          <char261>MV09: NoLvActHasSplAtt</char261>
+          <char448>MV09: NoLvActHasSplAtt</char448>
+          <char531>MV09: NoLvActHasSplAtt</char531>
+          <char693>0</char693>
+          <char002>MV09 - No Live, Has Special At</char002>
+          <char005>MV09 - No Live, Has Special At</char005>
+          <char034>MV09 - No Live, Has Special At</char034>
+          <char038>MV09 - No Live, Has Special At</char038>
+          <char470>MV09 - No Live, Has Special At</char470>
+          <char492>MV09 - No Live, Has Special At</char492>
+          <char510>MV09 - No Live, Has Special At</char510>
+          <char697>0</char697>
+          <char699>0</char699>
+        </DerivedVariables>
+        <CcrisDtlHit/>
+      </DetailRpt>
+      <SupplementaryRpt>
+        <StatusCode>00</StatusCode>
+        <RptRetrieveFromBNM>N</RptRetrieveFromBNM>
+        <RptRetrievalDate>27/06/2023</RptRetrievalDate>
+        <Errors/>
+        <Messages/>
+        <Data>
+          <Addresses>
+            <Address>
+              <Entity>19790374</Entity>
+              <Address1>NO 51 JALAN PERMAI 3</Address1>
+              <Address2>TAMAN DESA PERMAI</Address2>
+              <Address3>SG LALANG</Address3>
+              <Address4>BEDONG</Address4>
+              <Address5/>
+              <Address6>KEDAH</Address6>
+              <LongAddress>NO 51 JALAN PERMAI 3, TAMAN DESA PERMAI, SG LALANG, BEDONG, KEDAH</LongAddress>
+              <State_Code>02</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>08100</Post_Code>
+              <Org_Code>0233</Org_Code>
+              <Branch>14007</Branch>
+              <Application/>
+              <Create_Date>04/12/2019</Create_Date>
+            </Address>
+          </Addresses>
+          <Contacts>
+            <Contact>
+              <Entity>19790374</Entity>
+              <Contact_Type>CNT</Contact_Type>
+              <ISD_Code>0</ISD_Code>
+              <Prefix>0</Prefix>
+              <Phone_no>044585540</Phone_no>
+              <Org_code>0233</Org_code>
+              <Branch>14007</Branch>
+              <Application/>
+              <Create_Date>04/12/2019</Create_Date>
+            </Contact>
+          </Contacts>
+          <Occupations>
+            <Occupation>
+              <Entity>19790374</Entity>
+              <Occ_Type>999</Occ_Type>
+              <Occupation>UNKNOWN OCCUPATION</Occupation>
+              <Employer>TOKIO MARINE LIFE ASSURANCE M</Employer>
+              <Grs_income>0</Grs_income>
+              <Freq_code/>
+              <Currency/>
+              <from_Date/>
+              <to_Date/>
+              <Org_code>0233</Org_code>
+              <Branch>14007</Branch>
+              <Application/>
+              <Create_Date>04/12/2019</Create_Date>
+            </Occupation>
+          </Occupations>
+          <SpecialName/>
+        </Data>
+      </SupplementaryRpt>
+    </CcrisRpt>
+    <CtosRpt>
+      <CtosScoreRank>G</CtosScoreRank>
+      <Direction>P</Direction>
+      <Errors/>
+      <CtosHit/>
+      <report xmlns="http://ws.cmctos.com.my/ctosnet/response" version="4.1.0">
+        <enq_report xmlns="" id="BB-5214-20230627190647" report_type="CTOS" title="CTOS ENQUIRY">
+          <header>
+            <user id="xml_acsc2">AEON - XML TRANSACTION</user>
+            <company id="ACSC">AEON CREDIT SERVICE  (M) BHD XML TRANSACTION</company>
+            <account>ACSC02</account>
+            <tel/>
+            <fax/>
+            <enq_date>2023-06-27</enq_date>
+            <enq_time>19:06:47</enq_time>
+            <enq_status code="1">SUCCESS</enq_status>
+          </header>
+          <summary>
+            <enq_sum pcode="11" ptype="I" seq="1">
+              <name>KUMANAN A/L SUBRAMANIAM</name>
+              <ic_lcno/>
+              <nic_brno>790817025165</nic_brno>
+              <stat>1000</stat>
+              <dd_index>0000</dd_index>
+              <fico_index score="433">
+                <fico_factor code="D8">There is serious delinquency on the accounts, adverse record or collection filed on the credit report.</fico_factor>
+                <fico_factor code="M1">Number of accounts with delinquency on the credit report is high relative to the other applicants scored.</fico_factor>
+                <fico_factor code="K0">Time since delinquency on the credit report is too short relative to the other applicants scored.</fico_factor>
+                <fico_factor code="D2">There is delinquency on the accounts on credit report.</fico_factor>
+              </fico_index>
+              <mphone_nos/>
+              <ref_no>230303100003</ref_no>
+              <dist_code/>
+              <purpose code="200">Credit evaluation/account opening on subject/directors/shareholder with consent /due diligence on AMLA compliance</purpose>
+              <include_ctos>1</include_ctos>
+              <include_trex>1</include_trex>
+              <include_ccris sum="0">1</include_ccris>
+              <include_dcheq>0</include_dcheq>
+              <include_ccris_supp>1</include_ccris_supp>
+              <include_fico>1</include_fico>
+              <confirm_entity>19790374</confirm_entity>
+              <enq_status code="1">SUCCESS</enq_status>
+              <enq_code code="4">CTOS FICO Report</enq_code>
+            </enq_sum>
+          </summary>
+          <enquiry seq="1">
+            <section_summary>
+              <ctos>
+                <bankruptcy status="0"/>
+                <legal total="0" value="0"/>
+                <legal_personal_capacity total="0" value="0"/>
+                <legal_non_personal_capacity total="0" value="0"/>
+              </ctos>
+              <tr>
+                <trex_ref negative="1" positive="0"/>
+              </tr>
+              <ccris>
+                <application approved="0" pending="0" total="0"/>
+                <facility arrears="0" total="0" value="0.00"/>
+                <special_attention accounts="1"/>
+              </ccris>
+              <dcheqs entity="0"/>
+            </section_summary>
+            <section_a data="true" title="SECTION A - IDENTITY NUMBER VERIFICATION">
+              <record rpttype="Id" seq="1">
+                <name match="1">KUMANAN A/L SUBRAMANIAM</name>
+                <ic_lcno/>
+                <nic_brno match="1">790817025165</nic_brno>
+                <addr>NO.51 JLN PERMAI 3 TAMAN DESA PERMAI,SUNGAI LALANG,08100,BEDONG,Kedah,MY</addr>
+                <ccris_addresses>
+                  <ccris_address date="04-12-2019">NO 51 JALAN PERMAI 3, TAMAN DESA PERMAI, SG LALANG, BEDONG, KEDAH</ccris_address>
+                </ccris_addresses>
+                <source>NRD</source>
+                <cpo_date>18-11-2016</cpo_date>
+                <remark/>
+                <nationality>MALAYSIAN</nationality>
+                <birth_date>17-08-1979</birth_date>
+              </record>
+            </section_a>
+            <section_b data="true" title="SECTION B - INTERNAL LIST">
+              <history rpttype="EH" seq="1" year="2023">
+                <period month="1">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="2">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="3">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="4">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="5">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="6">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="7">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="8">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="9">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="10">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="11">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="12">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+              </history>
+              <history rpttype="EH" seq="2" year="2022">
+                <period month="1">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="2">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="3">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="4">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="5">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="6">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="1"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="7">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="8">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="9">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="10">
+                  <entity type="FI" value="1"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="11">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="12">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+              </history>
+            </section_b>
+            <section_c data="false" title="SECTION C - DIRECTORSHIPS AND BUSINESS INTERESTS"/>
+            <section_d data="false" title="SECTION D"/>
+            <section_d2 data="false" title="SECTION D2 - SUBJECT AS PLAINTIFF"/>
+            <section_ccris data="true" title="SECTION CCRIS">
+              <summary entity_key="19790374" entity_warning="" fi_code="3905">
+                <application>
+                  <approved count="0">0.00</approved>
+                  <pending count="0">0.00</pending>
+                </application>
+                <liabilities>
+                  <borrower fec_limit="0.00" total_limit="0.00">0.00</borrower>
+                  <guarantor/>
+                </liabilities>
+                <legal status="1"/>
+                <special_attention status="1"/>
+                <special_name status="0"/>
+              </summary>
+              <derivatives>
+                <application>
+                  <date>02-10-2006</date>
+                  <facility code="PCPASCAR">Purchase Of Passenger Cars</facility>
+                </application>
+                <facilities>
+                  <secure total="0">
+                    <outstanding average="0.0" limit="0">0</outstanding>
+                  </secure>
+                  <unsecure total="0">
+                    <outstanding average="0.0" limit="0">0</outstanding>
+                  </unsecure>
+                </facilities>
+              </derivatives>
+              <applications/>
+              <accounts/>
+              <special_attention_accs>
+                <special_attention_acc>
+                  <org1/>
+                  <org2/>
+                  <approval_date>03-03-2011</approval_date>
+                  <capacity code="Own">The loan is for this customer only</capacity>
+                  <lender_type code="CB">Commercial bank and Islamic bank</lender_type>
+                  <limit/>
+                  <collaterals>
+                    <collateral code="">
+                      <name/>
+                      <value/>
+                    </collateral>
+                  </collaterals>
+                  <legal status="15">
+                    <name>Writ of seizure and sale</name>
+                    <date>30-11-2022</date>
+                  </legal>
+                  <sub_accounts>
+                    <sub_account>
+                      <facility code="PCPASCAR">Purchase Of Passenger Cars</facility>
+                      <repay_term code=""/>
+                      <collaterals/>
+                      <cr_positions>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>31-05-2023</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>30-04-2023</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>31-03-2023</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>28-02-2023</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>31-01-2023</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>31-12-2022</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>30-11-2022</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>31-10-2022</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>30-09-2022</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>31-08-2022</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>31-07-2022</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                        <cr_position>
+                          <status code=""/>
+                          <balance/>
+                          <position_date>30-06-2022</position_date>
+                          <inst_arrears/>
+                          <mon_arrears/>
+                        </cr_position>
+                      </cr_positions>
+                    </sub_account>
+                  </sub_accounts>
+                </special_attention_acc>
+              </special_attention_accs>
+            </section_ccris>
+            <section_dcheqs data="false" title=""/>
+            <section_ccris_supp data="true" title="SECTION CCRIS SUPPLEMENTARY">
+              <addresses>
+                <address>
+                  <address1>NO 51 JALAN PERMAI 3</address1>
+                  <address2>TAMAN DESA PERMAI</address2>
+                  <address3>SG LALANG</address3>
+                  <address4>BEDONG</address4>
+                  <address5/>
+                  <address6>KEDAH</address6>
+                  <long_address>NO 51 JALAN PERMAI 3, TAMAN DESA PERMAI, SG LALANG, BEDONG, KEDAH</long_address>
+                  <state_code>02</state_code>
+                  <country>Malaysia</country>
+                  <post_code>08100</post_code>
+                  <org code="0233"/>
+                  <branch code="14007"/>
+                  <application code=""/>
+                  <create_date>04-12-2019</create_date>
+                </address>
+              </addresses>
+              <contacts>
+                <contact>
+                  <contact_type>CNT</contact_type>
+                  <isd_code>0</isd_code>
+                  <prefix>0</prefix>
+                  <phone_no>044585540</phone_no>
+                  <org code="0233"/>
+                  <branch code="14007"/>
+                  <application code=""/>
+                  <create_date>04-12-2019</create_date>
+                </contact>
+              </contacts>
+              <occupations>
+                <occupation>
+                  <occ_type>999</occ_type>
+                  <occupation>UNKNOWN OCCUPATION</occupation>
+                  <employer>TOKIO MARINE LIFE ASSURANCE M</employer>
+                  <from_date/>
+                  <to_date/>
+                  <org code="0233"/>
+                  <branch code="14007"/>
+                  <application code=""/>
+                  <create_date>04-12-2019</create_date>
+                </occupation>
+              </occupations>
+            </section_ccris_supp>
+          </enquiry>
+        </enq_report>
+        <trex xmlns="" status="1">
+          <subject_request>
+            <party_type>I</party_type>
+            <name>KUMANAN A/L SUBRAMANIAM</name>
+            <iclc/>
+            <nicbr>790817025165</nicbr>
+            <date_requested>27-06-2023 19:06:47</date_requested>
+            <date_completed>27-06-2023 19:06:47</date_completed>
+            <requester_id/>
+            <requester_name/>
+            <requester_comp_code>ACSC</requester_comp_code>
+            <requester_account>ACSC02</requester_account>
+          </subject_request>
+        </trex>
+        <eil_report xmlns="" status="0">
+          <eil_request>
+            <party_type>I</party_type>
+            <name>KUMANAN A/L SUBRAMANIAM</name>
+            <iclc/>
+            <nicbr>790817025165</nicbr>
+            <date_requested>27-06-2023 19:06:49</date_requested>
+            <date_completed>27-06-2023 19:06:49</date_completed>
+            <requester_id>xml_acsc2</requester_id>
+            <requester_name>AEON - XML TRANSACTION</requester_name>
+            <requester_comp_code>ACSC</requester_comp_code>
+            <requester_comp_name>AEON CREDIT SERVICE  (M) BHD XML TRANSACTION</requester_comp_name>
+            <requester_account>ACSC02</requester_account>
+          </eil_request>
+        </eil_report>
+        <tr_report xmlns="" preview="0" title="Trade Reference" type="TR">
+          <header>
+            <date>2023-06-27</date>
+            <req_name>AEON - XML TRANSACTION</req_name>
+            <req_email/>
+            <req_com_name>AEON CREDIT SERVICE  (M) BHD XML TRANSACTION</req_com_name>
+            <req_com_addr/>
+            <ref_com_name>COWAY (M) SDN BHD</ref_com_name>
+            <ref_email/>
+            <ref_com_bus>ELECTRONIC APPLIANCES</ref_com_bus>
+            <report_no>BB-5214-20230627190647</report_no>
+            <ic_lcno/>
+            <nic_brno>790817025165</nic_brno>
+            <name>KUMANAN A/L SUBRAMANIAM</name>
+          </header>
+          <enquiry account_no="3101559">
+            <section id="relationship">
+              <data name="rel_type">CUSTOMER</data>
+              <data name="rel_status">Defaulter</data>
+              <data name="account_no">3101559</data>
+              <data name="rel_syear">2019</data>
+              <data name="rel_smonth">5</data>
+              <data name="rel_sday">25</data>
+            </section>
+            <section id="sponsor"/>
+            <section id="account_status">
+              <data name="account_no">3101559</data>
+              <data name="statement_date">2019-10-30</data>
+              <data name="account_rating">4</data>
+              <data name="account_term">30</data>
+              <data name="account_limit">0</data>
+              <data name="account_status">Defaulter</data>
+              <data name="debtor_name">KUMANAN A/L SUBRAMANIAM</data>
+              <data name="debtor_ic_lcno"/>
+              <data name="debtor_nic_brno">790817025165</data>
+              <data name="address"/>
+              <data name="debt_type">Rental, Maintenance &amp; Utilities Charges</data>
+              <data name="age">
+                <item name="30">0.00</item>
+                <item name="60">0.00</item>
+                <item name="90">0.00</item>
+                <item name="120">0.00</item>
+                <item name="150">0.00</item>
+                <item name="180">0.00</item>
+                <item name="210">4690.00</item>
+              </data>
+            </section>
+            <section id="return_cheque" status="Not Provided"/>
+            <section id="legal_action" status="DETAILS AS PROVIDED BELOW">
+              <record seq="1">
+                <data name="title">Sent reminder to the subject for settlement</data>
+                <data name="date">2020-03-01</data>
+                <data name="comment"/>
+              </record>
+            </section>
+            <section id="cra_comment">
+              <data name="cra_status_id"/>
+              <data name="cra_status"/>
+              <data name="cra_status_desc"/>
+              <data name="cra_comment"/>
+            </section>
+            <section id="subject_comment">
+              <data name="subject_comment"/>
+            </section>
+            <section id="contact">
+              <data name="reference"/>
+              <data name="name"/>
+              <data name="address">SUITE 6-3 &amp; 6-4,LEVEL 6,WISMA UOA II,JLN PINANG,KL</data>
+              <data name="tel_no">03-20590000</data>
+              <data name="fax_no">03-21661677</data>
+              <data name="email"/>
+              <data name="type_code">4</data>
+              <data name="type_desc">Please ask the subject to contact us.</data>
+            </section>
+          </enquiry>
+        </tr_report>
+        <tr_report xmlns="" preview="0" title="Trade Reference" type="TR">
+          <header>
+            <date>2023-06-27</date>
+            <req_name>AEON - XML TRANSACTION</req_name>
+            <req_email/>
+            <req_com_name>AEON CREDIT SERVICE  (M) BHD XML TRANSACTION</req_com_name>
+            <req_com_addr/>
+            <ref_com_name>LIM KOK TONG MOTORS SDN BHD</ref_com_name>
+            <ref_email/>
+            <ref_com_bus>MOTORCYCLES DEALER</ref_com_bus>
+            <report_no>BB-5214-20230627190647</report_no>
+            <ic_lcno/>
+            <nic_brno>790817025165</nic_brno>
+            <name>KUMANAN A/L SUBRAMANIAM</name>
+          </header>
+          <enquiry account_no="SL002142">
+            <section id="relationship">
+              <data name="rel_type">Hire Purchase Customer</data>
+              <data name="rel_status">None</data>
+              <data name="account_no">SL002142</data>
+              <data name="rel_syear"/>
+              <data name="rel_smonth"/>
+              <data name="rel_sday"/>
+            </section>
+            <section id="sponsor"/>
+            <section id="account_status">
+              <data name="account_no">SL002142</data>
+              <data name="statement_date">2019-08-20</data>
+              <data name="account_rating">0</data>
+              <data name="account_term">0</data>
+              <data name="account_limit">0</data>
+              <data name="account_status">None</data>
+              <data name="debtor_name">KUMANAN A/L SUBRAMANIAM</data>
+              <data name="debtor_ic_lcno"/>
+              <data name="debtor_nic_brno">790817025165</data>
+              <data name="address">NO 51 JALAN PERMAI 3  TAMAN DESA PERMAI  08100 BEDONG  KEDAH</data>
+              <data name="debt_type">Others</data>
+              <data name="age">
+                <item name="30">0.00</item>
+                <item name="60">0.00</item>
+                <item name="90">510.00</item>
+                <item name="120">150.00</item>
+                <item name="150">0.00</item>
+                <item name="180">0.00</item>
+                <item name="210">0.00</item>
+              </data>
+            </section>
+            <section id="return_cheque" status="Not Provided"/>
+            <section id="legal_action" status="Not Provided"/>
+            <section id="cra_comment">
+              <data name="cra_status_id"/>
+              <data name="cra_status"/>
+              <data name="cra_status_desc"/>
+              <data name="cra_comment"/>
+            </section>
+            <section id="subject_comment">
+              <data name="subject_comment"/>
+            </section>
+            <section id="contact">
+              <data name="reference"/>
+              <data name="name"/>
+              <data name="address">N0 15, PEKAN TANAH MERAH PENDANG KEDAH</data>
+              <data name="tel_no">04-7591279</data>
+              <data name="fax_no">04--7595701</data>
+              <data name="email"/>
+              <data name="type_code">4</data>
+              <data name="type_desc">Please ask the subject to contact us.</data>
+            </section>
+          </enquiry>
+        </tr_report>
+      </report>
+    </CtosRpt>
+    <FisRpt>
+      <Direction>P</Direction>
+      <Errors/>
+      <FisHit/>
+    </FisRpt>
+    <RamciRpt>
+      <Direction>P</Direction>
+      <RamciHit/>
+      <Errors/>
+    </RamciRpt>
+  </Data>
+</Response>
