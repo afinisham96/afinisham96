@@ -4,8 +4,29 @@ http://10.10.5.37:8083/additional-document-upload?3673f15ff699f457fd2536bee31276
 
 https://finology-group.atlassian.net/browse/ACA-368
 
-	
-02PFTM470E2AB9673031
+
+02PFTM470E2AB9673031-Failed to get file due to corrupted NAS storage
+02PFON470E137085818-Failed to get file due to corrupted NAS storage
+02PFTM470E4201CF24A1-Missing file in NAS storage 
+02PFTM470EB66C122CE5-Failed to get file due to corrupted NAS storage
+02PFTM470E2AB95683A3-Failed to get file due to corrupted NAS storage
+02PFTM470EB66BF1B4B5-Failed to get file due to corrupted NAS storage
+02PFON470E5949F8D729-Failed to get file due to corrupted NAS storage
+02PFON470DE4DFC44D03-Failed to get file due to corrupted NAS storage
+02PFON470E4201BE840A-Failed to get file due to corrupted NAS storage
+02PFTM470DFC284AF439-Failed to get file due to corrupted NAS storage
+02PFTM470E42019153B5-Failed to get file due to corrupted NAS storage
+02PFON470E9F23B9839D-Failed to get file due to corrupted NAS storage
+02PFTM470E9F234ED123-Failed to get file due to corrupted NAS storage
+02PFTM470E87DB42F9F7-Failed to get file due to corrupted NAS storage
+02PFON470E1370A448EB-Missing file in NAS storage 
+02PFTM470DFC2888F6C7-Missing file in NAS storage 
+02PFTM470E87DAC8D8F3-Failed to get file due to corrupted NAS storage
+02PFTM470DFC2888271F-Failed to get file due to corrupted NAS storage
+02PFTM470EB66C3F54EB-Failed to get file due to corrupted NAS storage	
+
+
+
 
 28/7
 02PFON470E7092BE47C8
