@@ -1,0 +1,3535 @@
+openapi: 3.0.3
+security:
+  - authorization-token:
+    - authorization-token
+  - dropoff_steps:
+    - dropoff_steps
+info:
+  description: Credit Stack Engine
+  version: 1.0.20
+  title: Credit Stack Engine
+tags:
+  - name: case
+    externalDocs:
+      description: Find out more
+      url: ""#http://swagger.io
+  - name: applicant
+    externalDocs:
+      description: Find out more
+      url: ""#http://swagger.io
+  - name: ekyc
+    externalDocs:
+      description: Find out more
+      url: ""#http://swagger.io
+  - name: notification
+    externalDocs:
+      description: Find out more
+      url: ""#http://swagger.io
+  - name: biometric
+    externalDocs:
+      description: Find out more
+      url: ""#http://swagger.io
+servers:
+  - url: https://172.16.2.193:8443/CreditStack/v1
+    description: Development Server
+  - url: http://localhost:8500/CreditStack_20230214/v1
+    description: Local Server
+  - url: https://18.143.66.220:8443/CreditStack/v1
+    description: Finology AWS Server
+paths:
+  /case/pf:
+    post:
+      tags:
+        - case
+      summary: create a new case (personal financing)
+      description: ''
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CasePF'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateCasePFResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/pf/personal_details:
+    put:
+      tags:
+        - case
+      summary: update case - personal details (personal financing)
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application 
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CasePFPersonalDetails'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseUpdatedResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/pf/employment_details:
+    put:
+      tags:
+        - case
+      summary: update case - employment details (personal financing)
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application 
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CasePFEmploymentDetails'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseUpdatedResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/pf/income_details:
+    put:
+      tags:
+        - case
+      summary: update case - income details (personal financing)
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application 
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CasePFIncomeDetails'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseUpdatedResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/pf/emergency_contact:
+    put:
+      tags:
+        - case
+      summary: update case - emergency contact (personal financing)
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application 
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CasePFEmergencyContact'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseUpdatedResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/pf/product_details:
+    put:
+      tags:
+        - case
+      summary: update case - product details (personal financing)
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application 
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CasePFProductDetails'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseUpdatedResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/pf/terms_and_conditions:
+    put:
+      tags:
+        - case
+      summary: update case - terms and condition (personal financing)
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application 
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CasePFTnC'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseUpdatedResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/pf/branch_details:
+    put:
+      tags:
+        - case
+      summary: update case - Branch and Recruiter Code (personal financing)
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application 
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CasePFBranchRecruiter'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseUpdatedResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/personal_insurance:
+    post:
+      tags:
+        - case
+      summary: update case personal insurance flag (personal financing)
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CasePFPCI'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CasePFPCIResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /sendback:
+    post:
+      tags:
+        - sendback
+      summary: Request for Sendback (personal financing)
+      description: ''
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CasePFSendback'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseStatusResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/details:
+    get:
+      tags:
+        - case
+      summary: get case detail by case id (e.g. applicant / product..etc)
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetDetails'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/status:
+    get:
+      tags:
+        - case
+      summary: get case status by case id
+      description: ''
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseStatusResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/result:
+    get:
+      tags:
+        - case
+      summary: get case AIP result by case id
+      description: ''
+      parameters:
+        - name: caseid
+          in: path
+          description: Unique reference identifier for loan application
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseResultResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/terminate:
+    post:
+      tags:
+        - case
+      summary: terminate case by case id
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseStatusResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/{caseid}/submit:
+    post:
+      tags:
+        - case
+      summary: submit case by case id
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for loan application
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCaseSubmitStatusResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /case/pf/finance:
+    post:
+      tags:
+        - case
+      summary: Calculate Financing Info
+      description: ''
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CaseFinCalculator'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetFinCalculatorResult'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /applicant/{applicantid}/upload-document:
+    post:
+      tags:
+        - applicant
+      summary: upload file to the case
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: applicantid  
+          in: path
+          description: Unique reference identifier for loan applicant
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UploadDocument'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetUploadDocumentResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /applicant/{applicantid}/delete-document:
+    post:
+      tags:
+        - applicant
+      summary: delete file of the case
+      description: ''
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: applicantid  
+          in: path
+          description: Unique reference identifier for loan applicant
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RemoveDocument'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetRemoveDocumentResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /attachment:
+    get:
+      tags:
+        - attachment
+      summary: Get Attachments
+      description: ""
+      security:
+        - authorization-token: []
+        - bearerAuth: []
+        - dropoff_steps: []
+      parameters:
+        - name: disposition
+          in: query
+          description: Disposition
+          required: true
+          schema:
+            type: string
+            enum: ["inline", "attachment"]
+            example: "inline"
+        - name: doc_code
+          in: query
+          description: Document Code
+          required: true
+          schema:
+            type: string
+            example: "DA90758F-B7E0-4027-B1AE-0FB0CBEE0CE6"
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AttachmentResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /ekyc/otp/request:
+    post:
+      tags:
+        - ekyc
+      summary: Request OTP 
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RequestOTP'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestOTPResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /ekyc/otp/validate:
+    post:
+      tags:
+        - ekyc
+      summary: Validate OTP 
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ValidateOTP'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidateOTPResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /ekyc/ctos/ctos_onboard:
+    get:
+      tags:
+        - ekyc
+      summary: Request CTOS Onboarding URL 
+      parameters:
+        - name: caseid
+          in: query
+          description: Unique reference identifier for loan applicant
+          required: true
+          schema:
+            type: string
+            example: "02PFON10000000000398"
+        - name: channel
+          in: query
+          description: Delivery channel
+          schema:
+            type: string
+            enum: ['email', 'sms']
+            example: "email"
+        - name: phone
+          in: query
+          description: Phone Number
+          schema:
+            type: string
+            example: "(+60)123456789"
+        - name: email
+          in: query
+          description: Email
+          schema:
+            type: string
+            format: email
+            example: "abc@mail.com"
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CTOSOnboardingResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /ekyc/ctos/onboard/{onboardingid}/result:
+    get:
+      tags:
+        - ekyc
+      summary: CTOS Onboarding Result 
+      parameters:
+        - name: onboardingid  
+          in: path
+          description: Unique reference identifier for ctos onboarding
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CTOSResultResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /notification/send-email:
+    post:
+      tags:
+        - notification
+      summary: Send Email
+      description: ""
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SendEmail'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetSendEmailResponse'
+          
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /notification/send-sms:
+    post:
+      tags:
+        - notification
+      summary: Send SMS
+      description: ""
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SendSMS'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetSendSMSResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /param/data-list:
+    get:
+      tags:
+        - param
+      summary: Get Parameters
+      description: ""
+      parameters:
+        - name: lang_code
+          in: query
+          description: Language code
+          required: true
+          schema:
+            type: string
+            enum: ["EN", "BM"]
+        - name: prm_grp
+          in: query
+          description: Parameter group
+          required: false
+          schema:
+            type: string
+            example: "Applicant Type"
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetParametersGeneric'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /branch/list:
+    get:
+      tags:
+        - branch
+      summary: Get Branch Lists
+      description: ""
+      parameters:
+        - name: lang_code
+          in: query
+          description: Language code
+          required: true
+          schema:
+            type: string
+            enum: ["EN", "BM"]
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetParametersBranch'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /screening/{caseid}/internal:
+    post:
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for case
+          required: true
+          schema:
+            type: string
+      tags:
+        - screening
+      summary: Case Screening (Internal)
+      description: ""
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalCaseScreening'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /screening/{caseid}/external:
+    post:
+      parameters:
+        - name: caseid  
+          in: path
+          description: Unique reference identifier for case
+          required: true
+          schema:
+            type: string
+      tags:
+        - screening
+      summary: Case Screening (External)
+      description: ""
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CaseScreening'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /promocode/validate:
+    post:
+      tags:
+        - promocode
+      summary: Validate Promo Code
+      description: ""
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ValidatePromoCodeRequest'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidatePromoCodeResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /utils/validate-url:
+    post:
+      tags:
+        - utils
+      summary: Validate Sendback URL
+      description: ""
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ValidateSendbackURL'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidateSendbackURLResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /biometric:
+    post:
+      tags:
+        - biometric
+      summary: create new biometric request
+      description: ''
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateBiometricRequest'
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateBiometricResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+  /biometric/{biometricid}:
+    get:
+      parameters:
+        - name: biometricid  
+          in: path
+          description: Unique reference identifier for biometric
+          required: true
+          schema:
+            type: string
+      tags:
+        - biometric
+      summary: get biometric information
+      description: ''
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetBiometricResponse'
+        400:
+          $ref: "#/components/responses/BadRequest"
+        401:
+          $ref: "#/components/responses/InvalidAPI"
+        405:
+          $ref: "#/components/responses/InvalidInput"
+        500:
+          $ref: "#/components/responses/InternalError"
+components:
+  securitySchemes:
+    authorization-token:
+      type: apiKey
+      name: authorization-token
+      in: header
+    request_id:
+      type: apiKey
+      name: request_id
+      in: header
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    dropoff_steps:
+      type: apiKey
+      name: dropoff_steps
+      in: header
+  schemas:
+    CasePF:
+      type: object
+      required:
+        - applicant
+        - product_details
+      properties:
+        case_details:
+          type: object
+          properties:
+            branch_code:
+              type: string
+              maxLength: 12
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: ""
+            recruiter_code:
+              type: string
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: ""
+            channel_code:
+              type: integer
+              example: 6
+            crm_ref_id:
+              type: string
+              pattern: "^$|^([a-zA-Z0-9_]+)$"
+              example: "12846213"
+            applicant_type:
+              type: string
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: "CUS"
+            pdpa_declaration:
+              type: integer
+              format: int64
+              example: 1
+            accurate_information_declaration:
+              type: integer
+              format: int64
+              example: 0
+            privacy_notice_declaration:
+              type: integer
+              format: int64
+              example: 0
+            marketing_declaration:
+              type: integer
+              format: int64
+              example: 0
+            takaful_opt_in_declaration:
+              type: integer
+              format: int64
+              example: 0
+            biometric_id:
+              type: string
+              example: "ABC1234"
+        applicant:
+          type: object
+          required: [personal_details, income_details]
+          properties:
+            personal_details:
+              type: object
+              required: [full_name, date_of_birth, email, mobile_phone_number, id_type, id_number, nationality]
+              properties:
+                title:
+                  type: string
+                  maxLength: 1
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "1"
+                full_name:
+                  type: string
+                  minLength: 1
+                  maxLength: 100
+                  pattern: "^([a-zA-Z.',-/ @&]+)$"
+                  example: "John Doe"
+                date_of_birth:
+                  type: string
+                  format: date
+                  minLength: 1
+                  example: "1990-10-01"
+                email:
+                  type: string
+                  format: email
+                  minLength: 1
+                  maxLength: 40
+                  example: "john.doe@email.com"
+                existing_aeon_product:
+                  type: string
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "1"
+                residency_status:
+                  type: string
+                  maxLength: 1
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "B"
+                gender:
+                  type: string
+                  maxLength: 1
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "M"
+                race:
+                  type: string
+                  maxLength: 3
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "001"
+                other_race:
+                  type: string
+                  maxLength: 10
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: ""
+                marital_status:
+                  type: string
+                  maxLength: 1
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "2"
+                no_of_dependants:
+                  type: integer
+                  pattern: int64
+                  maxLength: 2
+                  example: 2
+                mobile_phone_number:
+                  type: string
+                  minLength: 1
+                  maxLength: 17
+                  example: "(+60)123456789"
+                id_type:
+                  type: string
+                  minLength: 1
+                  maxLength: 100
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "1"
+                id_number:
+                  type: string
+                  minLength: 1
+                  maxLength: 12
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "901010112222"
+                other_ic_type:
+                  type: string
+                  example: "2"
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                other_ic_field:
+                  type: string
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "A4297327891"
+                nationality:
+                  type: string
+                  minLength: 2
+                  maxLength: 2
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "MY"
+                address_line_1:
+                  type: string
+                  maxLength: 30
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: "B1-03-23, Apartment Anonymous"
+                address_line_2: 
+                  type: string
+                  maxLength: 30
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                address_line_3: 
+                  type: string
+                  maxLength: 30
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                postcode: 
+                  type: string
+                  maxLength: 5
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "79790"
+                city: 
+                  type: string
+                  maxLength: 40
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: "Bandar Utama"
+                state: 
+                  type: string
+                  maxLength: 3
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "02"
+                residential_ownership:
+                  type: string
+                  maxLength: 4
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "001"
+                years_of_stay:
+                  type: number
+                  format: float
+                  example: 10
+                permanent_resident:
+                  type: integer
+                  format: int64
+                  example: 1
+                permanent_address_1:
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: "B1-03-23, Apartment Anonymous"
+                permanent_address_2:
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                permanent_address_3:
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                permanent_postal_code:
+                  type: string
+                  maxLength: 5
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "79790"
+                permanent_state:
+                  type: string
+                  maxLength: 3
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "02"
+                permanent_city:
+                  type: string
+                  maxLength: 40
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: "Bandar Utama"
+                relationship:
+                  type: string
+                  minLength: 0
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: ""
+                ocr_verified:
+                  type: array
+                  xml:
+                    name: ocr_verified
+                    wrapped: true
+                  items:
+                    type: object
+                    properties:
+                      front_id:
+                        type: integer
+                        format: int64
+                      back_id: 
+                        type: integer
+                        format: int64
+                      passport_id:
+                        type: integer
+                        format: int64
+            employment_details:
+              type: object
+              properties:
+                employment_status:
+                  type: string
+                  maxLength: 12
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "0"
+                employment_type:
+                  type: string
+                  maxLength: 40
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "113"
+                aeon_employee:
+                  type: integer
+                  format: int64
+                  example: 0
+                company_name:
+                  type: string
+                  example: "Berjaya Sdn. Bhd."
+                  pattern: "^$|^([a-zA-Z0-9.&-()']+)$"
+                company_address_1:
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: "37, Jalan Berjaya"
+                company_address_2: 
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                company_address_3: 
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                company_city: 
+                  type: string
+                  maxLength: 40
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: "Bandar Utama"
+                company_state: 
+                  type: string
+                  maxLength: 3
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "02"
+                company_postcode: 
+                  type: string
+                  maxLength: 5
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "79790"
+                company_phone:
+                  type: string
+                  maxLength: 17
+                  example: "(+60)123456789"
+                profession:
+                  type: string
+                  maxLength: 25
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "03"
+                other_profession:
+                  type: string
+                  maxLength: 20
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: ""
+                department:
+                  type: string
+                  maxLength: 2
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "09"
+                other_department:
+                  type: string
+                  maxLength: 20
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: ""
+                nature_of_business:
+                  type: string
+                  maxLength: 50
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "01"
+                other_nature_of_business:
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: ""
+                business_registration_number:
+                  type: string
+                  minLength: 0
+                  maxLength: 255
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: ""
+                directorship:
+                  type: integer
+                  format: int64
+                  example: 0
+                paid_up_capital:
+                  type: integer
+                  format: int64
+                  example: 0
+                shareholding:
+                  type: integer
+                  format: int64
+                  example: 0
+                business_establishment_date:
+                  type: string
+                  example: "1900-01-01"
+                  minLength: 0
+                length_of_employment:
+                  type: number
+                  format: float
+                  example: 20
+                correspondence_address:
+                  type: string
+                  maxLength: 2
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "1"
+            income_details:
+              type: object
+              required: [is_salary_commission_based, gross_monthly_income, net_monthly_income]
+              properties:
+                income_type:
+                  type: string
+                  example: "fixed_income"
+                is_salary_commission_based:
+                  type: integer
+                  format: int64
+                  minLength: 1
+                  example: 1
+                gross_monthly_income:
+                  type: object
+                  required: [value, currency_code]
+                  properties:
+                    value:
+                      type: number
+                      format: double
+                      minLength: 1
+                      example: 5000
+                    currency_code:
+                      type: string
+                      minLength: 1
+                      maxLength: 255
+                      pattern: "^([a-zA-Z0-9]+)$"
+                      example: "MYR"
+                net_monthly_income:
+                  type: object
+                  required: [value, currency_code]
+                  properties:
+                    value:
+                      type: number
+                      format: double
+                      minLength: 1
+                      example: 5000
+                    currency_code:
+                      type: string
+                      minLength: 1
+                      maxLength: 255
+                      pattern: "^([a-zA-Z0-9]+)$"
+                      example: "MYR"
+            documents:
+              type: object
+              properties:
+                ic_front:
+                  type: object
+                  properties:
+                    doc_code:
+                      type: string
+                      example: ""
+                    doc_name:
+                      type: string
+                      example: "Test Sample.txt"
+                    base64:
+                      type: string
+                      example: "QUJDRA=="
+                ic_back:
+                  type: object
+                  properties:
+                    doc_code:
+                      type: string
+                      example: ""
+                    doc_name:
+                      type: string
+                      example: "Test Sample.txt"
+                    base64:
+                      type: string
+                      example: "QUJDRA=="
+                passport_front:
+                  type: object
+                  properties:
+                    doc_code:
+                      type: string
+                      example: ""
+                    doc_name:
+                      type: string
+                      example: "Test Sample.txt"
+                    base64:
+                      type: string
+                      example: "QUJDRA=="
+                bank_payslip:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      doc_code:
+                        type: string
+                      doc_name:
+                        type: string
+                      base64:
+                        type: string
+                  example:
+                    - doc_code: ""
+                      doc_name: "Payslip 1.txt"
+                      base64: "QUJDRA=="
+                    - doc_code: ""
+                      doc_name: "Payslip 2.txt"
+                      base64: "QUJDRA=="
+        emergency_contact:
+          type: object
+          properties:
+            personal_details:
+                type: object
+                properties:
+                  title:
+                    type: string
+                    maxLength: 12
+                    pattern: "^$|^([a-zA-Z0-9]+)$"
+                    example: "2"
+                  full_name: 
+                    type: string
+                    maxLength: 80
+                    pattern: "^$|^([a-zA-Z.',-/ @&]+)$"
+                    example: "Jane Doe"
+                  mobile_phone_number:
+                    type: string
+                    maxLength: 33
+                    example: "(+60)123456789"
+                  address_line_1:
+                    type: string
+                    maxLength: 100
+                    pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                    example: "B1-03-23, Apartment Anonymous"
+                  address_line_2: 
+                    type: string
+                    maxLength: 100
+                    pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                    example: ""
+                  address_line_3: 
+                    type: string
+                    maxLength: 100
+                    pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                    example: ""
+                  postcode: 
+                    type: string
+                    maxLength: 5
+                    pattern: "^$|^([a-zA-Z0-9]+)$"
+                    example: "79790"
+                  city: 
+                    type: string
+                    maxLength: 40
+                    pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                    example: "Bandar Utama"
+                  state: 
+                    type: string
+                    maxLength: 3
+                    pattern: "^$|^([a-zA-Z0-9]+)$"
+                    example: "02"
+                  relationship:
+                    type: string
+                    maxLength: 4
+                    pattern: "^$|^([a-zA-Z0-9]+)$"
+                    example: "ECP"
+        product_details:
+          type: object
+          required: [loan_amount, loan_tenure]
+          properties:
+            loan_amount:
+              type: number
+              format: double
+              minLength: 1
+              maxLength: 24
+              example: 35000
+            loan_tenure:
+              type: integer
+              format: int64
+              minLength: 1
+              maxLength: 100
+              example: 5
+            loan_tenure_type:
+              type: integer
+              example: 20
+            agent_code:
+              type: string
+              maxLength: 12
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: "12345"
+            promo_code:
+              type: string
+              maxLength: 15
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: "ABDH3211"
+            non_fi_loans:
+              type: string
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: "No"
+            monthly_repayment_non_fi_loans:
+              type: number
+              format: double
+              example: 0
+            loan_purpose:
+              type: string
+              maxLength: 100
+              pattern: "^$|^([a-zA-Z0-9 &]+)$"
+              example: "Education"
+            auto_debit_bank:
+              type: string
+              pattern: "^$|^([a-zA-Z0-9 ]+)$"
+              example: "Maybank"
+            auto_debit_bank_account_name:
+              type: string
+              maxLength: 100
+              pattern: "^$|^([a-zA-Z.',-/ @&]+)$"
+              example: "John Doe Account"
+            auto_debit_bank_account_number:
+              type: string
+              maxLength: 25
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: "12948574389A"
+            disbursement_bank:
+              type: string
+              pattern: "^$|^([a-zA-Z0-9 ]+)$"
+              example: "Maybank"
+            disbursement_bank_account_name:
+              type: string
+              maxLength: 100
+              pattern: "^$|^([a-zA-Z.',-/ @&]+)$"
+              example: "Disbursement Bank Account Name"
+            disbursement_bank_account_number:
+              type: string
+              maxLength: 25
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: "12948574389A"
+            disbursement_to_amp_card:
+              type: integer
+              format: int64
+              example: 0
+    CasePFSendback:
+      type: object
+      properties:
+        RequestNo:
+          type: integer
+          format: int64
+          example: 123456789
+        SendBackInfo:
+          type: object
+          properties:
+            InputDate:
+              type: string
+              format: date
+              example: "2023-02-27"
+            Module:
+              type: string
+              pattern: "^([a-zA-Z0-9]+)$"
+              example: ""
+            StatusDate:
+              type: string
+              format: date
+              example: "2023-02-27"
+            StatusTime:
+              type: string
+              example: "13:03"
+            RefNo:
+              type: string
+              pattern: "^([a-zA-Z0-9]+)$"
+              example: "02PFON10000000000047"
+            ReCode:
+              type: string
+              pattern: "^([a-zA-Z0-9]+)$"
+              example: "REC02912"
+            FirstName:
+              type: string
+              pattern: "^([a-zA-Z0-9]+)$"
+              example: "Yasmin Binti Zahid"
+            HandPhone:
+              type: string
+              example: "(+60)1234567890"
+            OtherRemark:
+              type: string
+              pattern: "^([a-zA-Z0-9]+)$"
+              example: ""
+            Region:
+              type: string
+              pattern: "^([a-zA-Z0-9]+)$"
+              example: "0001"
+            RequestChannel:
+              type: string
+              pattern: "^([a-zA-Z0-9]+)$"
+              example: "6"
+            EmailAddress:
+              type: string
+              example: "abc@mail.com"
+            ImageFilePath:
+              type: string
+              example: "ftp://10.21.40.134//LOSUAT_IMAGESTORAGE0001/NonVIP/2022/10/14/PF_221010090400_Q1411665362320_ACS.pdf"
+            JomApplicationNo:
+              type: string
+              pattern: "^([a-zA-Z0-9]+)$"
+              example: ""
+            WebDate:
+              type: string
+              format: date
+              example: "2023-02-27"
+            ReasonLists:
+              type: object
+              properties:
+                desc:
+                  type: string
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: ""
+                remark:
+                  type: string
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: ""
+    GetDetails:
+      type: object
+      properties:
+        case:
+          type: object
+          properties:
+            case_id:
+              type: integer
+              format: int64
+              example: 1000
+            case_code:
+              type: string
+              example: "REF10000"
+            applicant_type:
+              type: string
+              example: "CUS"
+            status:
+              type: string
+              example: "SUBMITTED"
+            internal_check_passed:
+              type: string
+              example: "PASSED"
+            channel_code:
+              type: string
+              example: "2"
+            branch_code:
+              type: string
+              example: ""
+            recruiter_code:
+              type: string
+              example: ""
+            crm_ref_id:
+              type: string
+              example: "PF-2012319-CR"
+            pdpa_declaration:
+              type: integer
+              format: int64
+              example: 1
+            accurate_information_declaration:
+              type: integer
+              format: int64
+              example: 1
+            privacy_notice_declaration:
+              type: integer
+              format: int64
+              example: 1
+            marketing_declaration:
+              type: integer
+              format: int64
+              example: 1
+            takaful_opt_in_declaration:
+              type: integer
+              format: int64
+              example: 1
+            personal_care_insurance:
+              type: integer
+              example: 1
+            dropoff_steps:
+              type: string
+              example: "Step 1"
+            dropoff_steps_furthest:
+              type: string
+              example: "Step 1"
+        applicant:
+          type: object
+          required: [full_name, date_of_birth, email, mobile_phone_number, id_type, id_number, nationality, address_line_1, postcode, city, state, ocr_verified, employment_details, income_details, documents]
+          properties:
+            personal_details:
+              type: object
+              properties:
+                title:
+                  type: string
+                  minLength: 1
+                  maxLength: 100
+                  example: "1"
+                full_name: 
+                  type: string
+                  minLength: 10
+                  maxLength: 255
+                  example: "John Doe"
+                date_of_birth:
+                  type: string
+                  format: date
+                  minLength: 1
+                  maxLength: 255
+                  example: "1990-10-01"
+                email:
+                  type: string
+                  format: email
+                  minLength: 1
+                  maxLength: 255
+                  example: "john.doe@email.com"
+                existing_aeon_product:
+                  type: string
+                  example: "1"
+                residency_status:
+                  type: string
+                  example: "B"
+                gender:
+                  type: string
+                  example: "1"
+                race:
+                  type: string
+                  example: "001"
+                marital_status:
+                  type: string
+                  example: "2"
+                no_of_dependants:
+                  type: integer
+                  format: int64
+                  example: 2
+                mobile_phone_number:
+                  type: string
+                  pattern: '^[0-9]*$'
+                  minLength: 1
+                  maxLength: 10
+                  example: "0123456789"
+                id_type:
+                  type: string
+                  minLength: 10
+                  maxLength: 100
+                  example: "NRIC"
+                id_number:
+                  type: string
+                  minLength: 1
+                  maxLength: 23
+                  example: "901010112222"
+                other_ic_type:
+                  type: string
+                  example: "2"
+                other_ic_field:
+                  type: string
+                  example: "A4297327891"
+                nationality:
+                  type: string
+                  minLength: 2
+                  maxLength: 255
+                  example: "MY"
+                address_line_1:
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: "B1-03-23, Apartment Anonymous"
+                address_line_2: 
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: ""
+                address_line_3: 
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: ""
+                postcode: 
+                  type: string
+                  minLength: 5
+                  maxLength: 8
+                  example: "79790"
+                city: 
+                  type: string
+                  minLength: 10
+                  maxLength: 255
+                  example: "Bandar Utama"
+                state: 
+                  type: string
+                  minLength: 2
+                  maxLength: 255
+                  example: "02"
+                residential_ownership:
+                  type: string
+                  example: "001"
+                years_of_stay:
+                  type: number
+                  format: float
+                  example: 10
+                permanent_resident:
+                  type: string
+                  example: "Yes"
+                permanent_address_1:
+                  type: string
+                  example: "B1-03-23, Apartment Anonymous"
+                permanent_address_2:
+                  type: string
+                  example: ""
+                permanent_address_3:
+                  type: string
+                  example: ""
+                permanent_postal_code:
+                  type: string
+                  example: "79790"
+                permanent_state:
+                  type: string
+                  example: "02"
+                permanent_city:
+                  type: string
+                  example: "Bandar Utama"
+                relationship:
+                  type: string
+                  minLength: 2
+                  maxLength: 100
+                  example: ""
+                applicant_type:
+                  type: string
+                  example: "Main Applicant"
+                sms_verified:
+                  type: integer
+                  format: int64
+                  example: 1
+                email_verified:
+                  type: integer
+                  format: int64
+                  example: 1
+                biometric_verified:
+                  type: integer
+                  format: int64
+                  example: 1
+                ekyc_verified:
+                  type: integer
+                  format: int64
+                  example: 1
+                user_verified:
+                  type: integer
+                  format: int64
+                  example: 1
+                aml_passed: 
+                  type: integer
+                  format: int64
+                  example: 1
+                acsm_existing_cus:
+                  type: integer
+                  format: int64
+                  example: 1
+                ocr_verified:
+                  type: array
+                  xml:
+                    name: ocr_verified
+                    wrapped: true
+                  items:
+                    type: object
+                    properties:
+                      front_id:
+                        type: integer
+                        format: int64
+                      back_id: 
+                        type: integer
+                        format: int64
+                      passport_id:
+                        type: integer
+                        format: int64
+            employment_details:
+              type: object
+              required: [employment_status, employment_type, company_name, company_address_1, company_city, company_state, company_postcode, company_phone]
+              properties:
+                employment_status:
+                  type: string
+                  minLength: 1
+                  maxLength: 100
+                  example: "Employed"
+                employment_type:
+                  type: string
+                  minLength: 3
+                  maxLength: 255
+                  example: "113"
+                aeon_employee:
+                  type: string
+                  example: "No"
+                company_name:
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: "Berjaya Sdn. Bhd."
+                company_address_1:
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: "37, Jalan Berjaya"
+                company_address_2: 
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: ""
+                company_address_3: 
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: ""
+                company_city: 
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: "Bandar Utama"
+                company_state: 
+                  type: string
+                  minLength: 2
+                  maxLength: 255
+                  example: "02"
+                company_postcode: 
+                  type: string
+                  minLength: 5
+                  maxLength: 8
+                  example: "79790"
+                company_phone:
+                  type: string
+                  pattern: '^[0-9]*$'
+                  minLength: 1
+                  maxLength: 10
+                  example: "032928471"
+                profession:
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: "Manager"
+                other_profession:
+                  type: string
+                  example: ""
+                department:
+                  type: string
+                  minLength: 2
+                  maxLength: 255
+                  example: "09"
+                other_department:
+                  type: string
+                  example: ""
+                nature_of_business:
+                  type: string
+                  minLength: 2
+                  maxLength: 255
+                  example: "01"
+                other_nature_of_business:
+                  type: string
+                  example: ""
+                business_registration_number:
+                  type: string
+                  minLength: 0
+                  maxLength: 255
+                  example: ""
+                directorship:
+                  type: integer
+                  format: int64
+                  example: 0
+                paid_up_capital:
+                  type: integer
+                  format: int64
+                  example: 0
+                shareholding:
+                  type: integer
+                  format: int64
+                  example: 0
+                business_establishment_date:
+                  type: string
+                  format: date
+                  example: "1900-01-01"
+                  minLength: 1
+                length_of_employment:
+                  type: number
+                  format: float
+                  example: 20
+                correspondence_address:
+                  type: string
+                  example: "O"
+            income_details:
+              type: object
+              required: [is_salary_commission_based, gross_monthly_income, net_monthly_income]
+              properties:
+                income_type:
+                  type: string
+                  example: "fixed_income"
+                is_salary_commission_based:
+                  type: integer
+                  format: int64
+                  minLength: 1
+                  example: 1
+                gross_monthly_income:
+                  type: object
+                  required: [value, currency_code]
+                  properties:
+                    value:
+                      type: integer
+                      format: int64
+                      minLength: 1
+                      example: 5000
+                    currency_code:
+                      type: string
+                      minLength: 1
+                      maxLength: 255
+                      example: "MYR"
+                net_monthly_income:
+                  type: object
+                  required: [value, currency_code]
+                  properties:
+                    value:
+                      type: integer
+                      format: int64
+                      minLength: 1
+                      example: 5000
+                    currency_code:
+                      type: string
+                      minLength: 1
+                      maxLength: 255
+                      example: "MYR"
+            documents:
+              type: object
+              properties:
+                ic_front:
+                  type: array
+                  items:
+                    type: string
+                    example: "197e8b13-09d9-4daf-94e9-201cf76c1aa7"
+                ic_back:
+                  type: array
+                  items:
+                    type: string
+                    example: "197e8b13-09d9-4daf-94e9-201cf76c1aa7"
+                passport_front:
+                  type: array
+                  items:
+                    type: string
+                    example: "197e8b13-09d9-4daf-94e9-201cf76c1aa7"
+                bank_payslip:
+                  type: array
+                  items:
+                    type: string
+                    example:
+                      - "197e8b13-09d9-4daf-94e9-201cf76c1aa7"
+                      - "197e8b13-09d9-4daf-94e9-201cf76c1aa7"
+        emergency_contact:
+          type: object
+          properties:
+            personal_details:
+              type: object
+              properties:
+                title:
+                  type: string
+                  example: "2"
+                full_name: 
+                  type: string
+                  example: "Jane Doe"
+                mobile_phone_number:
+                  type: string
+                  example: "0123456789"
+                address_line_1:
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: "B1-03-23, Apartment Anonymous"
+                address_line_2: 
+                  type: string
+                  minLength: 0
+                  maxLength: 255
+                  example: ""
+                address_line_3: 
+                  type: string
+                  minLength: 0
+                  maxLength: 255
+                  example: ""
+                postcode: 
+                  type: string
+                  minLength: 5
+                  maxLength: 8
+                  example: "79790"
+                city: 
+                  type: string
+                  minLength: 1
+                  maxLength: 255
+                  example: "Bandar Utama"
+                state: 
+                  type: string
+                  minLength: 2
+                  maxLength: 255
+                  example: "02"
+                relationship:
+                  type: string
+                  minLength: 1
+                  maxLength: 100
+                  example: "ECP"
+        product_details:
+          type: object
+          required: [loan_amount, loan_tenure, loan_purpose]
+          properties:
+            loan_amount:
+              type: integer
+              format: int64
+              minLength: 1
+              maxLength: 50
+              example: 35000
+            loan_tenure:
+              type: integer
+              format: int64
+              minLength: 1
+              maxLength: 100
+              example: 5
+            loan_tenure_type:
+              type: integer
+              example: 20
+            agent_code:
+              type: string
+              example: "12345"
+            promo_code:
+              type: string
+              example: "ABDH3211"
+            non_fi_loans:
+              type: string
+              example: "No"
+            monthly_repayment_non_fi_loans:
+              type: integer
+              format: int64
+              example: 0
+            loan_purpose:
+              type: string
+              minLength: 1
+              maxLength: 255
+              example: "Education"
+            auto_debit_bank:
+              type: string
+              example: "Maybank"
+            auto_debit_bank_account_name:
+              type: string
+              example: "John Doe Account"
+            auto_debit_bank_account_number:
+              type: string
+              example: "12948574389A"
+            disbursement_bank:
+              type: string
+              example: "Maybank"
+            disbursement_bank_account_name:
+              type: string
+              example: "John Doe Account"
+            disbursement_bank_account_number:
+              type: string
+              example: "12948574389A"
+            disbursement_to_amp_card:
+              type: integer
+              format: int64
+              example: 0
+    UploadDocument:
+      type: object
+      properties:
+        ic_front:
+          type: object
+          properties:
+            doc_code:
+              type: string
+              example: "197e8b13-09d9-4daf-94e9-201cf76c1aa7"
+            doc_name:
+              type: string
+              example: "Test Sample.txt"
+            base64:
+              type: string
+              example: "QUJDRA=="
+        ic_back:
+          type: object
+          properties:
+            doc_code:
+              type: string
+              example: "197e8b13-09d9-4daf-94e9-201cf76c1aa7"
+            doc_name:
+              type: string
+              example: "Test Sample.txt"
+            base64:
+              type: string
+              example: "QUJDRA=="
+        passport_front:
+          type: object
+          properties:
+            doc_code:
+              type: string
+              example: "197e8b13-09d9-4daf-94e9-201cf76c1aa7"
+            doc_name:
+              type: string
+              example: "Test Sample.txt"
+            base64:
+              type: string
+              example: "QUJDRA=="
+        bank_payslip:
+          type: array
+          items:
+            type: object
+            properties:
+              doc_code:
+                type: string
+              doc_name:
+                type: string
+              base64:
+                type: string
+          example:
+            - doc_code: "197e8b13-09d9-4daf-94e9-201cf76c1aa7"
+              doc_name: "Payslip 1.txt"
+              base64: "QUJDRA=="
+            - doc_code: "197e8b13-09d9-4daf-94e9-201cf76c1aa7"
+              doc_name: "Payslip 2.txt"
+              base64: "QUJDRA=="
+    RemoveDocument:
+      type: object
+      properties:
+        doc_code:
+          type: array
+          items:
+            type: string
+          example:
+          - "DA90758F-B7E0-4027-B1AE-0FB0CBEE0CE6"
+          - "E0E3C6C9-BD25-4735-A410-E7DB06358777"
+    SendEmail:
+      type: object
+      required:
+        - emailprovider
+        - sender
+        - recipient
+        - subject
+        - emailcontent
+      properties:
+        email_provider:
+          type: string
+          maxLength: 255
+        sender:
+          type: string
+          maxLength: 255
+        recipient:
+          type: string
+          maxLength: 255
+        cc:
+          type: string
+          maxLength: 255
+        bcc:
+          type: string
+          maxLength: 255
+        subject:
+          type: string
+          maxLength: 255
+        email_content:
+          type: string
+          maxLength: 255
+        attachments:
+          type: array
+          items:
+            type: object
+            required: [doc_name, doc_type, base64]
+            properties:
+              doc_name:
+                type: string
+                minLength: 1
+                maxLength: 255
+              doc_type:
+                type: string
+                minLength: 1
+                maxLength: 255
+              base64:
+                type: string
+                minLength: 1
+          example:
+            - doc_name: "Test Sample.txt"
+              doc_type: "IC"
+              base64: "QUJDRA=="
+            - doc_name: "Test Sample.txt"
+              doc_type: "CTOS Report"
+              base64: "QUJDRA=="
+            - doc_name: "Test Sample.txt"
+              doc_type: "CCRIS Report"
+              base64: "QUJDRA=="
+      additionalProperties: false
+    SendSMS:
+      type: object
+      required:
+        - sms_provider
+        - sender
+        - recipient
+        - sms_content
+      properties:
+        sms_provider:
+          type: string
+          maxLength: 255
+        sender:
+          type: string
+          maxLength: 20
+        recipient:
+          type: string
+          maxLength: 20
+        sms_content:
+          type: string
+          maxLength: 255
+    RequestOTP:
+      type: object
+      required: [delivery_channel, id_number]
+      properties:
+        delivery_channel:
+          type: string
+          minLength: 1
+          enum: ["sms", "email"]
+          example: "sms"
+        applicant_id:
+          type: string
+          minLength: 1
+          example: "10292"
+        phone:
+          type: string
+          example: "(+60)123456789"
+        email:
+          type: string
+          format: email
+          example: ""
+    RequestOTPResponse:
+      type: object
+      properties:
+        code:
+          type: string
+          example: "OTP_REQ_200"
+        status:
+          type: string
+          example: "OTP Sent."
+    ValidateOTP:
+      type: object
+      required: [delivery_channel, id_number, otp_code]
+      properties:
+        delivery_channel:
+          type: string
+          minLength: 1
+          enum: ["sms", "email"]
+          example: "sms"
+        applicant_id:
+          type: string
+          minLength: 1
+          example: "10292"
+        phone:
+          type: string
+          example: "(+60)123456789"
+        email:
+          type: string
+          format: email
+          example: ""
+        otp_code:
+          type: string
+          minLength: 1
+          example: "193757"
+    ValidateOTPResponse:
+      type: object
+      properties:
+        code:
+          type: string
+          example: "OTP_VER_200"
+        status:
+          type: string
+          example: "Verified OTP."
+        jwt:
+          type: string
+          example: "eyJhbGciOiJSUzI1NiJ9.eyJjYXNlaWQiOlsxMDAwMDAwMDAwMDY5OF0sImFwcGxpY2FudGlkIjpbMjgzMiwyODMxXSwic3ViIjoiQXV0aG9yaXphdGlvbiIsImlzcyI6IkNyZWRpdFN0YWNrIiwiZXhwIjoxNjc5MDI1ODY5LCJpYXQiOjE2Nzg5Mzk0NjksImp0aSI6IjRhMjE0YzdhLTcwZjUtNDg4Ni1iNzZiLTExNTU2MThkZDgyMiJ9.QSQDxBL84-D8DTNIiS2iY-p9MxZVxQhJgxncR4m9-I5EB5UdIrHR2XfS2Nw20h7-hvi2x1rUpG2vls9vMASAzEv23jNJxAuvGXoqcHgsp8iqDuvTKJgefT2k5BSi9snYEk5WMkNmCupLelqx8MzUYr9SPwUv4R2PjYkrChKiPoklmAZu7_IY4GLgptDtkUrvWgb4Pcy2f13cG2-6jrNp8_g0xYOvSuG9Uqc_FBK06dJmTZSZWzxBvgl59PNDQINjkFK6buUvA4PL-9vailEVT-31rCuit66qf3zJqc79xlm79S7_KQicSfB1031HuIyIqRBHs93DpHAguivq4vdzdw"
+    CasePFPersonalDetails:
+      type: object
+      required:
+        - applicant
+      properties:
+        applicant:
+          type: object
+          required: [personal_details]
+          properties:
+            personal_details:
+              type: object
+              required: [full_name, date_of_birth, email, mobile_phone_number, id_type, id_number, nationality]
+              properties:
+                title:
+                  type: string
+                  maxLength: 1
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "1"
+                full_name:
+                  type: string
+                  minLength: 1
+                  maxLength: 30
+                  pattern: "^([a-zA-Z.',-/ @&]+)$"
+                  example: "John Doe"
+                date_of_birth:
+                  type: string
+                  format: date
+                  minLength: 1
+                  maxLength: 255
+                  example: "1990-10-01"
+                email:
+                  type: string
+                  format: email
+                  minLength: 1
+                  maxLength: 40
+                  example: "john.doe@email.com"
+                existing_aeon_product:
+                  type: string
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "1"
+                residency_status:
+                  type: string
+                  maxLength: 1
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "B"
+                gender:
+                  type: string
+                  maxLength: 1
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "M"
+                race:
+                  type: string
+                  maxLength: 3
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "001"
+                other_race:
+                  type: string
+                  maxLength: 10
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: ""
+                marital_status:
+                  type: string
+                  maxLength: 1
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "2"
+                no_of_dependants:
+                  type: integer
+                  format: int64
+                  maxLength: 2
+                  example: 2
+                mobile_phone_number:
+                  type: string
+                  minLength: 1
+                  maxLength: 17
+                  example: "(+60)123456789"
+                id_type:
+                  type: string
+                  minLength: 1
+                  maxLength: 100
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "1"
+                id_number:
+                  type: string
+                  minLength: 1
+                  maxLength: 12
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "901010112222"
+                other_ic_type:
+                  type: string
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "2"
+                other_ic_field:
+                  type: string
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "BFJFKHEFJ2"
+                nationality:
+                  type: string
+                  minLength: 2
+                  maxLength: 2
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "MY"
+                address_line_1:
+                  type: string
+                  maxLength: 30
+                  pattern: "^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: "B1-03-23, Apartment Anonymous"
+                address_line_2: 
+                  type: string
+                  maxLength: 30
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                address_line_3: 
+                  type: string
+                  maxLength: 30
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                postcode: 
+                  type: string
+                  maxLength: 5
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "79790"
+                city: 
+                  type: string
+                  maxLength: 40
+                  pattern: "^([a-zA-Z0-9 ]+)$"
+                  example: "Bandar Utama"
+                state: 
+                  type: string
+                  maxLength: 3
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "02"
+                residential_ownership:
+                  type: string
+                  maxLength: 4
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "001"
+                years_of_stay:
+                  type: number
+                  format: float
+                  example: 10
+                permanent_resident:
+                  type: integer
+                  format: int64
+                  example: 1
+                permanent_address_1:
+                  type: string
+                  maxLength: 100
+                  pattern: "^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: "B1-03-23, Apartment Anonymous"
+                permanent_address_2:
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                permanent_address_3:
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                permanent_postal_code:
+                  type: string
+                  maxLength: 5
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "79790"
+                permanent_state:
+                  type: string
+                  maxLength: 3
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "02"
+                permanent_city:
+                  type: string
+                  maxLength: 40
+                  pattern: "^([a-zA-Z0-9 ]+)$"
+                  example: "Bandar Utama"
+                relationship:
+                  type: string
+                  maxLength: 4
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: ""
+                ocr_verified:
+                  type: array
+                  xml:
+                    name: ocr_verified
+                    wrapped: true
+                  items:
+                    type: object
+                    properties:
+                      front_id:
+                        type: integer
+                        format: int64
+                      back_id: 
+                        type: integer
+                        format: int64
+                      passport_id:
+                        type: integer
+                        format: int64
+    CasePFEmploymentDetails:
+      type: object
+      required:
+        - applicant
+      properties:
+        applicant:
+          type: object
+          required: [employment_details]
+          properties:  
+            employment_details:
+              type: object
+              properties:
+                employment_status:
+                  type: string
+                  maxLength: 12
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "Employed"
+                employment_type:
+                  type: string
+                  maxLength: 40
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "113"
+                aeon_employee:
+                  type: integer
+                  format: int64
+                  example: 0
+                company_name:
+                  type: string
+                  example: "Berjaya Sdn. Bhd."
+                  pattern: "^$|^([a-zA-Z0-9.&-()']+)$"
+                company_address_1:
+                  type: string
+                  maxLength: 100
+                  pattern: "^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: "37, Jalan Berjaya"
+                company_address_2: 
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                company_address_3: 
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                company_city: 
+                  type: string
+                  maxLength: 40
+                  pattern: "^([a-zA-Z0-9 ]+)$"
+                  example: "Bandar Utama"
+                company_state: 
+                  type: string
+                  maxLength: 3
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "02"
+                company_postcode: 
+                  type: string
+                  maxLength: 5
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "79790"
+                company_phone:
+                  type: string
+                  maxLength: 17
+                  example: "(+60)32928471"
+                profession:
+                  type: string
+                  maxLength: 25
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "Manager"
+                other_profession:
+                  type: string
+                  maxLength: 20
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: ""
+                department:
+                  type: string
+                  maxLength: 2
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "09"
+                other_department:
+                  type: string
+                  maxLength: 20
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: ""
+                nature_of_business:
+                  type: string
+                  maxLength: 50
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "01"
+                other_nature_of_business:
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: ""
+                business_registration_number:
+                  type: string
+                  minLength: 0
+                  maxLength: 255
+                  example: ""
+                directorship:
+                  type: integer
+                  format: int64
+                  example: 0
+                paid_up_capital:
+                  type: integer
+                  format: int64
+                  example: 0
+                shareholding:
+                  type: integer
+                  format: int64
+                  example: 0
+                business_establishment_date:
+                  type: string
+                  example: "1900-01-01"
+                length_of_employment:
+                  type: number
+                  format: float
+                  example: 20
+                correspondence_address:
+                  type: string
+                  maxLength: 2
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "1"
+    CasePFIncomeDetails:
+      type: object
+      required:
+        - applicant
+      properties:
+        applicant:
+          type: object
+          required: [income_details]
+          properties:  
+            income_details:
+              type: object
+              required: [is_salary_commission_based, gross_monthly_income, net_monthly_income]
+              properties:
+                income_type:
+                  type: string
+                  example: "fixed_income"
+                is_salary_commission_based:
+                  type: integer
+                  format: int64
+                  minLength: 1
+                  example: 1
+                gross_monthly_income:
+                  type: object
+                  required: [value, currency_code]
+                  properties:
+                    value:
+                      type: number
+                      format: double
+                      minLength: 1
+                      example: 5000
+                    currency_code:
+                      type: string
+                      minLength: 1
+                      maxLength: 255
+                      pattern: "^([a-zA-Z0-9]+)$"
+                      example: "MYR"
+                net_monthly_income:
+                  type: object
+                  required: [value, currency_code]
+                  properties:
+                    value:
+                      type: number
+                      format: double
+                      minLength: 1
+                      example: 5000
+                    currency_code:
+                      type: string
+                      minLength: 1
+                      maxLength: 255
+                      pattern: "^([a-zA-Z0-9]+)$"
+                      example: "MYR"
+    CasePFEmergencyContact:
+      type: object
+      required:
+        - emergency_contact
+      properties:
+        emergency_contact:
+          type: object
+          properties:
+            personal_details:
+              type: object
+              properties:
+                title:
+                  type: string
+                  maxLength: 12
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "2"
+                full_name: 
+                  type: string
+                  maxLength: 80
+                  pattern: "^$|^([a-zA-Z.',-/ @&]+)$"
+                  example: "Jane Doe"
+                spouse:
+                  type: string
+                  example: ""
+                mobile_phone_number:
+                  type: string
+                  maxLength: 33
+                  example: "(+60)123456789"
+                address_line_1:
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: "B1-03-23, Apartment Anonymous"
+                address_line_2: 
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                addres_line_3: 
+                  type: string
+                  maxLength: 100
+                  pattern: "^$|^([a-zA-Z0-9.',-/(): #@%&]+)$"
+                  example: ""
+                postcode: 
+                  type: string
+                  maxLength: 5
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "79790"
+                city: 
+                  type: string
+                  maxLength: 40
+                  pattern: "^$|^([a-zA-Z0-9 ]+)$"
+                  example: "Bandar Utama"
+                state: 
+                  type: string
+                  maxLength: 3
+                  pattern: "^$|^([a-zA-Z0-9]+)$"
+                  example: "02"
+                relationship:
+                  type: string
+                  maxLength: 4
+                  pattern: "^([a-zA-Z0-9]+)$"
+                  example: "ECP"
+    CasePFProductDetails:
+      type: object
+      required:
+        - product_details
+      properties:
+        product_details:
+          type: object
+          required: [loan_amount, loan_tenure]
+          properties:
+            loan_amount:
+              type: number
+              format: double
+              minLength: 1
+              maxLength: 50
+              example: 35000
+            loan_tenure:
+              type: integer
+              format: int64
+              minLength: 1
+              maxLength: 100
+              example: 5
+            loan_tenure_type:
+              type: integer
+              example: 20
+            agent_code:
+              type: string
+              maxLength: 12
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: "12345"
+            promo_code:
+              type: string
+              maxLength: 15
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: "ABDH3211"
+            non_fi_loans:
+              type: string
+              pattern: "^$|^([a-zA-Z0-9]+)$"
+              example: "No"
+            monthly_repayment_non_fi_loans:
+              type: number
+              format: double
+              example: 0
+            loan_purpose:
+              type: string
+              maxLength: 100
+              pattern: "^$|^([a-zA-Z0-9 &]+)$"
+              example: "Education"
+            auto_debit_bank:
+              type: string
+              pattern: "^([a-zA-Z0-9 ]+)$"
+              example: "Maybank"
+            auto_debit_bank_account_name:
+              type: string
+              maxLength: 100
+              pattern: "^([a-zA-Z.',-/ @&]+)$"
+              example: "John Doe Account"
+            auto_debit_bank_account_number:
+              type: string
+              maxLength: 25
+              pattern: "^([a-zA-Z0-9]+)$"
+              example: "12948574389A"
+            disbursement_bank:
+              type: string
+              pattern: "^([a-zA-Z0-9 ]+)$"
+              example: "Maybank"
+            disbursement_bank_account_name:
+              type: string
+              maxLength: 100
+              pattern: "^$|^([a-zA-Z.',-/ @&]+)$"
+              example: "Disbursement Bank Account Name"
+            disbursement_bank_account_number:
+              type: string
+              maxLength: 25
+              pattern: "^([a-zA-Z0-9]+)$"
+              example: "12948574389A"
+            disbursement_to_amp_card:
+              type: integer
+              format: int64
+              example: 0
+    CasePFTnC:
+      type: object
+      properties:
+        pdpa_declaration:
+          type: integer
+          format: int64
+          example: 0
+        accurate_information_declaration:
+          type: integer
+          format: int64
+          example: 0
+        privacy_notice_declaration:
+          type: integer
+          format: int64
+          example: 0
+        marketing_declaration:
+          type: integer
+          format: int64
+          example: 0
+        takaful_opt_in_declaration:
+          type: integer
+          format: int64
+          example: 0
+    CasePFPCI:
+      type: object
+      properties:
+        personal_care_insurance:
+          type: integer
+          format: int64
+          example: 1
+    CasePFBranchRecruiter:
+      type: object
+      properties:
+        branch_code:
+          type: string
+        recruiter_code:
+          type: string
+    ValidateSendbackURL:
+      type: object
+      properties:
+        caseid: 
+          type: string
+          example: "02PFON10000000000045"
+        token:
+          type: string
+          example: "398899c2ce69b17af1eaf0eceed1a8bc"
+    CreateBiometricRequest:
+      type: object
+      properties:
+        requestId:
+          type: string
+          example: "ABC123"
+        nric:
+          type: string
+          example: "1990-10-01"
+        biometricVerification:
+          type: integer
+          format: int64
+          maxLength: 1
+          example: 1
+        biometricImage:
+          type: string
+          example: "QUJDRA=="
+        biometricId:
+          type: string
+          example: "ABC123"
+        name:
+          type: string
+          example: "John Doe"
+        dob:
+          type: string
+          format: date
+          example: "1900-01-01"
+        address1:
+          type: string
+          example: "B1-03-23, Apartment Anonymous"
+        address2: 
+          type: string
+          example: ""
+        address3: 
+          type: string
+          example: ""
+        postal:
+          type: string
+          maxLength: 5
+          example: "79790"
+        city:
+          type: string
+          example: "Bandar Utama"
+        state: 
+          type: string
+          maxLength: 3
+          example: "02"
+        gender:
+          type: string
+          maxLength: 1
+          example: "M"
+    CreateBiometricResponse:
+      type: object
+      properties:
+        responseId:
+          type: string
+          example: "RESPONSE0001"
+        responseDateTime:
+          type: string
+          format: date
+          example: "dd/MM/yyyy:HH:mm:ss"
+        requestId:
+          type: string
+          example: "REQUEST0001"
+        responseStatus:
+          type: string
+          example: "S"
+        responseMessage:
+          type: string
+          example: ""
+        redirectURL:
+          type: string
+          example: "https://e.loanplus.io/yourls-api.php&refid=12345"
+    GetBiometricResponse:
+      type: object
+      properties:
+        full_name:
+          type: string
+          example: "John Doe"
+        id_type:
+          type: string
+          maxLength: 3
+          example: "001"
+        id_number:
+          type: string
+          example: "1900-01-01"
+    ValidateSendbackURLResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "Valid"
+        jwt:
+          type: string
+          example: "eyJhbGciOiJSUzI1NiJ9.eyJjYXNlaWQiOjEwMDAwMDAwMDAwMTc0LCJhcHBsaWNhbnRpZCI6WzE3ODMsMTc4NF0sInN1YiI6IlVSTCBUb2tlbiIsImlzcyI6IkNyZWRpdFN0YWNrIiwiZXhwIjoxNjc3ODEzMjU3LCJpYXQiOjE2Nzc4MTMxMzcsImp0aSI6IjBlYjRhY2M4LWQxMjAtNDZlNy04OWQwLTIxMjhiOTk1Yjc5MCJ9.Mse2r-hhST9_nyJ3RAqe0rLeM3vYcBflZPVwwlZR1V-iMvsyw04o3nZAaewOZ77IuZYONkMKn0GoOre4oqA025BqRB9eJhpk-FNhtnQsr1PH6iVcfunKY9ztbhmqQEqqPoTMzwE_pROJf_OhEk6rT7Jn9u_TkugI01R-35sTpFfky7mygN3WZWaE6UVDDRZjxyaCJdrTSNabB5-zxTGNV9He15-QMjVS31F_nv3vI53LfXPGm3K408LUzNIOnnjNf0bCh72IRIwOCJYWqJx7siKS0XXt4yTgpnw5nP2tzygA8Vodva2-x0LrkWfjlUsc1lfn_gxRPa_pK0wtWFwmKA"
+        case_id:
+          type: string
+          example: "02PFON10000000000174"
+        applicant_id:
+          type: integer
+          format: int64
+          example: 1783
+        applicant_name:
+          type: string
+          example: ""
+        OtherRemark:
+          type: string
+          example: ""
+        ReasonLists:
+          type: object
+          properties:
+            desc:
+              type: string
+              example: ""
+            remark:
+              type: string
+              example: ""
+    CreateCasePFResponse:
+      type: object
+      properties:
+        case_id:
+          type: integer
+          example: 146291
+        applicant_id:
+          type: integer
+          example: 2166
+        applicant_type:
+          type: string
+          example: "CUS"
+        case_code:
+          type: string
+          example: "02PLON146291"
+        status:
+          type: string
+          example: "Case Created."
+        jwt:
+          type: string
+          example: "eyJhbGciOiJSUzI1NiJ9.eyJjYXNlaWQiOlsxMDAwMDAwMDAwMDY5OF0sImFwcGxpY2FudGlkIjpbMjgzMiwyODMxXSwic3ViIjoiQXV0aG9yaXphdGlvbiIsImlzcyI6IkNyZWRpdFN0YWNrIiwiZXhwIjoxNjc5MDI1ODY5LCJpYXQiOjE2Nzg5Mzk0NjksImp0aSI6IjRhMjE0YzdhLTcwZjUtNDg4Ni1iNzZiLTExNTU2MThkZDgyMiJ9.QSQDxBL84-D8DTNIiS2iY-p9MxZVxQhJgxncR4m9-I5EB5UdIrHR2XfS2Nw20h7-hvi2x1rUpG2vls9vMASAzEv23jNJxAuvGXoqcHgsp8iqDuvTKJgefT2k5BSi9snYEk5WMkNmCupLelqx8MzUYr9SPwUv4R2PjYkrChKiPoklmAZu7_IY4GLgptDtkUrvWgb4Pcy2f13cG2-6jrNp8_g0xYOvSuG9Uqc_FBK06dJmTZSZWzxBvgl59PNDQINjkFK6buUvA4PL-9vailEVT-31rCuit66qf3zJqc79xlm79S7_KQicSfB1031HuIyIqRBHs93DpHAguivq4vdzdw"
+        user_verified:
+          type: integer
+          format: int64
+          maxLength: 1
+          example: 0
+    GetCaseUpdatedResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "Case Updated."
+    GetUploadDocumentResponse:
+      type: object
+      properties:
+        attachments:
+          type: array
+          items:
+            properties:
+              doc_name:
+                type: string
+              doc_type:
+                type: string
+              doc_code:
+                type: string
+          example:
+            - doc_name: "INDI_SALARY_SLIP_1.png"
+              doc_type: "INDI_SALARY_SLIP_L1"
+              doc_code: "7BB77845-CC32-4F33-94FE-018FC501A1F1"
+            - doc_name: "INDI_SALARY_SLIP_2.png"
+              doc_type: "INDI_SALARY_SLIP_L2"
+              doc_code: "7BB77845-CC32-4F33-94FE-018FC501A1F1"
+        status:
+          type: string
+          example: "Upload Completed."
+    GetRemoveDocumentResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "Completed Delete Attachment."
+    CasePFPCIResponse:
+      type: object
+      properties:
+        ref_id:
+          type: string
+          example: "12345"
+        redirect_url:
+          type: string
+          example: "https://e.loanplus.io/yourls-api.php&refid=12345"
+    GetCaseStatusResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "Completed."
+    GetCaseSubmitStatusResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "Submitted."
+    GetCaseResultResponse:
+      type: object
+      properties:
+        max_loan_eligibility:
+          type: integer
+          format: int64
+          example: 5000
+        credit_status:
+          type: string
+          example: "SUCCESS"
+        interest_rate:
+          type: string
+          example: "4.5"
+        monthly_repayment_amount:
+          type: integer
+          format: int64
+          example: 250
+        max_eligibility_instalment:
+          type: integer
+          format: int64
+          example: 1000
+    GetSendEmailResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "Completed."
+    GetSendSMSResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "Completed."
+    GetParametersGeneric:
+      type: object
+      properties:
+        applicant_type:
+          type: array
+          items:
+            type: object
+            properties:
+              label:
+                type: string
+              value:
+                type: string
+          example:
+            - label: "Customer"
+              value: "CUS"
+            - label: "Staff"
+              value: "STF"
+            - label: "VIP"
+              value: "VIP"
+    GetParametersBranch:
+      type: object
+      properties:
+        branch_list:
+          type: array
+          items:
+            type: object
+            properties:
+              code:
+                type: string
+              name:
+                type: string
+              pic_email:
+                type: string
+                format: email
+              state:
+                type: string
+              region:
+                type: string
+          example:
+          - code: "1001"
+            name: "Kota Bharu"
+            pic_email: "csu_kotabharu@aeoncredit.com.my"
+            state: "07"
+            region: "0004"
+          - code: "1002"
+            name: "AEON Mall Kota Bharu"
+            pic_email: "csuaeonmall_kb@aeoncredit.com.my"
+            state: "07"
+            region: "0004"
+    CaseFinCalculator:
+      type: object
+      required: [financing_amount, instalment_period]
+      properties:
+        financing_amount:
+          type: integer
+          format: int64
+          example: 10000
+        installment_period:
+          type: string
+          example: 6
+        promo_code:
+          type: string
+          example: "AEON02"
+        case_id:
+          type: string
+          example: "02PFON10000000000001"
+    GetFinCalculatorResult:
+      type: object
+      properties:
+        monthly_instalment:
+          type: integer
+          format: int64
+        profit_rate:
+          type: integer
+          format: int64
+        discounted_monthly_instalment:
+          type: integer
+          format: int64
+        discounted_profit_rate:
+          type: integer
+          format: int64
+    CaseScreening:
+      type: object
+      properties:
+        max_loan_eligibility:
+          type: integer
+          format: int64
+          example: 5000
+        credit_status:
+          type: string
+          example: "PASS"
+        interest_rate:
+          type: integer
+          format: int64
+          example: 5.5
+        monthly_repayment_amount:
+          type: integer
+          format: int64
+          example: 200
+        max_eligibility_instalment:
+          type: integer
+          format: int64
+          example: 1000
+    InternalCaseScreening:
+      type: object
+      properties:
+        internal_check_passed:
+          type: string
+          example: "1"
+        internal_check_status_description:
+          type: string
+          example: ""
+    CTOSOnboardingResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            ref_id:
+              type: string
+              example: "35bcf0cf1c6149ce9b428200e626796a"
+            onboarding_id:
+              type: string
+              example: "1234"
+            onboarding_url:
+              type: string
+              example: "https://10.10.1.98/api/web/index.php?r=/v2/gateway/perform-gateway"
+    CTOSResultResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "SUCCESS"
+        documents:
+          type: array
+          items:
+            type: object
+            required: [doc_type, base64]
+            properties:
+              doc_type:
+                type: string
+                minLength: 1
+                maxLength: 255
+              base64:
+                type: string
+                minLength: 1
+          example:
+            - doc_name: "Test Sample.txt"
+              doc_type: "IC"
+              base64: "QUJDRA=="
+            - doc_name: "Test Sample.txt"
+              doc_type: "CTOS Report"
+              base64: "QUJDRA=="
+            - doc_name: "Test Sample.txt"
+              doc_type: "CCRIS Report"
+              base64: "QUJDRA=="
+    ValidatePromoCodeRequest:
+      type: object
+      properties:
+        promo_code:
+          type: string
+          example: "AEONPF03"
+        agent_code:
+          type: string
+          example: "0000025"
+        tenure:
+          type: integer
+          format: int64
+          example: 12
+        loan_amount:
+          type: number
+          format: double
+          example: 10000.51
+        min_gross_income:
+          type: number
+          format: double
+          example: 5000.51
+        case_id:
+          type: string
+          example: "02PFON10000000000142"
+    ValidatePromoCodeResponse:
+      type: object
+      properties:
+        name:
+          type: string
+          example: "AEON05"
+        discount:
+          type: integer
+          format: int64
+          example: 0.05
+        description:
+          type: string
+          example: "Valid promo with 0.05% per month discount."
+        status:
+          type: string
+          example: "Valid"
+        applicant_type:
+          type: string
+          example: "CUS"
+    AttachmentResponse:
+      type: string
+      format: binary
+      description: "Return Binary if disposition value is inline."
+      example: "[binary data]"
+  responses:
+    BadRequest:
+     description: "Bad request. The request is either missing some required information or has the wrong structure or data."
+    InvalidAPI:
+      description: Invalid API / API Key.
+    InvalidInput:
+      description: Invalid Input
+    InternalError:
+      description: "Internal Server Error. An error was encountered on the server."
