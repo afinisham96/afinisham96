@@ -1,8 +1,26 @@
-02PFON470E70927FD93B 21/7
 
-02PFON470E5949DB30AD
 
-02PFON470DFC2879AA84
+TMK corrupted NAS storage
+02PFTM470E5949F7EE91-12/7 create, sendback 21/7,report 27/7
+
+02PFTM470E4201CD765E-create 13/7,sednback 24/7,report 27/7
+
+
+02PFTM470E2AB95683A3-create case 13/7, perform sendback 21/7-production
+
+02PFON470DFC281D0BC6-16/7, perform sendback 22/7-unable to find documents due to corrupted san storage-TMK
+
+
+
+
+02PFON470E420182B7E3-sendback -date 20/7-production
+
+production monitoring
+02PFON470E70927FD93B 21/7 -send back
+
+02PFON470E5949DB30AD -los unsuccess
+
+02PFON470DFC2879AA84 - sendback
 
 
 
