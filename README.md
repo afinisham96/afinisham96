@@ -1,3 +1,6 @@
+Email: ba@finology.group
+Password: U@"f<r%2}&C>uVM'
+
 02PFON470E7092D0F5B2
 02PFON470E9F23A0419D
 
