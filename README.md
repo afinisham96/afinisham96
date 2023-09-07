@@ -1,33 +1,4 @@
-curl "http://10.21.30.31:8083/api/case/pf?recaptcha-response=undefined" ^
-  -H "Accept-Language: en-US,en;q=0.9" ^
-  -H "Connection: keep-alive" ^
-  -H "Cookie: _gcl_au=1.1.554297524.1693281983; _ga=GA1.1.676128409.1693281984; _fbp=fb.3.1693281984902.2020926647; XSRF-TOKEN=6eb7f7cd-aab5-4ba4-9dd8-521411d1f0c4; _gid=GA1.1.2004983146.1693993028; _ga_MCFMYQ80CK=GS1.1.1693993028.5.1.1693993103.57.0.0" ^
-  -H "Origin: http://10.21.30.31:8083" ^
-  -H "Referer: http://10.21.30.31:8083/" ^
-  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" ^
-  -H "accept: application/json" ^
-  -H "content-type: application/json" ^
-  -H "dropoff_steps: Step 2A" ^
-  -H "x-xsrf-token: 6eb7f7cd-aab5-4ba4-9dd8-521411d1f0c4" ^
-  --data-raw "^{^\^"applicant^\^":^{^\^"personal_details^\^":^{^\^"title^\^":^\^"^\^",^\^"full_name^\^":^\^"TEST QKJHJKCH ADJHLA JADJLKA LKSJDLKJ JANDKJNALK ADLKJLKADJ NALKDJLKADJKLAJDL KAJDKAJAJDA KAJDLKAJDL^\^",^\^"date_of_birth^\^":^\^"1981-02-28^\^",^\^"email^\^":^\^"afini.work.test^@gmail.com^\^",^\^"existing_aeon_product^\^":^\^"^\^",^\^"residency_status^\^":^\^"^\^",^\^"gender^\^":^\^"F^\^",^\^"race^\^":^\^"^\^",^\^"marital_status^\^":^\^"^\^",^\^"number_of_dependants^\^":0,^\^"other_ic_type^\^":^\^"^\^",^\^"other_ic_field^\^":^\^"^\^",^\^"mobile_phone_number^\^":^\^"(+60)1110029792^\^",^\^"id_type^\^":^\^"001^\^",^\^"id_number^\^":^\^"810228103324^\^",^\^"nationality^\^":^\^"MY^\^",^\^"address_line_1^\^":^\^" ^\^",^\^"address_line_2^\^":^\^" ^\^",^\^"address_line_3^\^":^\^"^\^",^\^"postcode^\^":^\^"^\^",^\^"city^\^":^\^"^\^",^\^"state^\^":^\^"^\^",^\^"relationship^\^":^\^"^\^",^\^"residential_ownership^\^":^\^"^\^",^\^"years_of_stay^\^":0,^\^"permanentResident^\^":0,^\^"permanentAddress1^\^":^\^"^\^",^\^"permanentAddress2^\^":^\^"^\^",^\^"permanentAddress3^\^":^\^"^\^",^\^"permanentPostalCode^\^":^\^"^\^",^\^"permanentState^\^":^\^"^\^",^\^"permanentCity^\^":^\^"^\^",^\^"correspondenceAddress^\^":^\^"^\^"^},^\^"employment_details^\^":^{^\^"employment_status^\^":^\^"^\^",^\^"employment_type^\^":^\^"^\^",^\^"aeon_employee^\^":0,^\^"company_name^\^":^\^"^\^",^\^"company_address_1^\^":^\^"^\^",^\^"company_address_2^\^":^\^"^\^",^\^"company_address_3^\^":^\^"^\^",^\^"company_city^\^":^\^"^\^",^\^"company_state^\^":^\^"^\^",^\^"company_postcode^\^":^\^"^\^",^\^"company_phone^\^":^\^"^\^",^\^"profession^\^":^\^"01^\^",^\^"other_profession^\^":^\^"^\^",^\^"department^\^":^\^"^\^",^\^"other_department^\^":^\^"^\^",^\^"nature_of_business^\^":^\^"^\^",^\^"other_nature_of_business^\^":^\^"^\^",^\^"business_registration_number^\^":^\^"^\^",^\^"directorship^\^":0,^\^"paidup_capital^\^":0,^\^"shareholding^\^":0,^\^"business_establishment_date^\^":^\^"^\^",^\^"length_of_employment^\^":0^},^\^"income_details^\^":^{^\^"is_salary_commission_based^\^":0,^\^"gross_monthly_income^\^":^{^\^"value^\^":10000,^\^"currency_code^\^":^\^"MYR^\^"^},^\^"net_monthly_income^\^":^{^\^"value^\^":9000,^\^"currency_code^\^":^\^"MYR^\^"^}^}^},^\^"emergency_contact^\^":^{^\^"personal_details^\^":^{^\^"title^\^":^\^"^\^",^\^"full_name^\^":^\^"TEST QKJHJKCH ADJHLA JADJLKA LKSJDLKJ JANDKJNALK ADLKJLKADJ NALKDJLKADJKLAJDL KAJDKAJAJDA KAJDLKAJDL^\^",^\^"date_of_birth^\^":^\^"^\^",^\^"residency_status^\^":^\^"^\^",^\^"spouse^\^":^\^"^\^",^\^"other_ic_field^\^":^\^"^\^",^\^"mobile_number^\^":^\^"(+60)1110029792^\^",^\^"id_type^\^":^\^"^\^",^\^"id_number^\^":^\^"^\^",^\^"nationality^\^":^\^"^\^",^\^"address_line_1^\^":^\^"^\^",^\^"address_line_2^\^":^\^"^\^",^\^"address_line_3^\^":^\^"^\^",^\^"postcode^\^":^\^"^\^",^\^"city^\^":^\^"^\^",^\^"state^\^":^\^"^\^",^\^"relationship^\^":^\^"^\^",^\^"residential_ownership^\^":^\^"^\^",^\^"years_of_stay^\^":0,^\^"permanentResident^\^":^\^"No^\^",^\^"permanent_address_1^\^":^\^"^\^",^\^"permanent_address_2^\^":^\^"^\^",^\^"permanent_address_3^\^":^\^"^\^",^\^"permanent_postal_code^\^":^\^"^\^",^\^"permanent_state^\^":^\^"^\^",^\^"permanent_city^\^":^\^"^\^",^\^"correspondence_address^\^":^\^"^\^"^}^},^\^"product_details^\^":^{^\^"loan_amount^\^":100000,^\^"tenure^\^":^\^"^\^",^\^"loan_purpose^\^":^\^"^\^",^\^"loan_tenure^\^":^\^"84^\^",^\^"loan_tenure_type^\^":0,^\^"promo_code^\^":^\^"^\^",^\^"agent_code^\^":^\^"^\^",^\^"non_fi_loans^\^":^\^"^\^",^\^"monthly_repayment_non_fi_loans^\^":0,^\^"auto_Debit_Bank^\^":^\^"^\^",^\^"auto_debit_bank_account_name^\^":^\^"^\^",^\^"auto_debit_bank_account_number^\^":^\^"^\^",^\^"disbursement_Bank^\^":^\^"^\^",^\^"disbursement_bank_account_name^\^":^\^"^\^",^\^"disbursement_bank_account_number^\^":^\^"^\^"^},^\^"case_details^\^":^{^\^"branch_code^\^":^\^"^\^",^\^"recruiter_code^\^":^\^"^\^",^\^"applicant_type^\^":^\^"CUS^\^",^\^"pdpa_declaration^\^":0,^\^"accurate_information_declaration^\^":0,^\^"privacy_notice_declaration^\^":0,^\^"marketing_declaration^\^":0,^\^"takaful_opt_in_declaration^\^":0,^\^"channel_code^\^":6,^\^"crm_ref_id^\^":^\^"^\^"^}^}" ^
-  --compressed ^
-  --insecure
 
-{errorCode: "500",…}
-errorCode
-: 
-"500"
-errorMessage
-: 
-"{ \"r\" : [[ \"error code\", \"error message\"], [ \"java.lang.RuntimeException: Body schema validation errors\\n$.emergency_contact.personal_details.full_name: may only be 80 characters long\",\"java.lang.RuntimeException: Body schema validation errors\\n$.emergency_contact.personal_details.full_name: may only be 80 characters long\"] ],  \"type\" : \"error\" }"
-
-02PFON470EB66C968C61
-
-02PFON470E2AB99F54D3
-
-02PFON470E87DBE5C450
-
-02PFON470EB66C8748DB
 
 http://10.10.5.37:8083/?ref=PF_6650131_CRM&id=A200001&chnl=2&pcode=NA&branch=0155
 
