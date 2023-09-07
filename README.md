@@ -1,3 +1,11 @@
+{errorCode: "500",…}
+errorCode
+: 
+"500"
+errorMessage
+: 
+"{ \"r\" : [[ \"error code\", \"error message\"], [ \"java.lang.RuntimeException: Body schema validation errors\\n$.applicant_id: is missing but it is required\",\"java.lang.RuntimeException: Body schema validation errors\\n$.applicant_id: is missing but it is required\"] ],  \"type\" : \"error\" }"
+
 http://10.21.30.31:8083?ref=PF_6650250_CRM&id=A220144&chnl=8&pcode=NA&branch=0174
 
 http://10.10.5.37:8083/?ref=PF_6650131_CRM&id=A200001&chnl=2&pcode=NA&branch=0155
