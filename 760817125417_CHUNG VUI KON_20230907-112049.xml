@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?><Response>
+  <Header>
+    <UserID>AIPPF</UserID>
+    <UserGroup>01</UserGroup>
+    <VersionNo>0600</VersionNo>
+    <RespTimestamp>20230907112048</RespTimestamp>
+    <StatusCode>00</StatusCode>
+    <ReservedField/>
+  </Header>
+  <Data>
+    <RefNo>230303100003</RefNo>
+    <ReportType>NANN</ReportType>
+    <CcrisRpt>
+      <Direction>P</Direction>
+      <Errors/>
+      <IDNo>760817125417</IDNo>
+      <IDNo2>H0921187</IDNo2>
+      <EntWarning/>
+      <Name>CHUNG VUI KON</Name>
+      <BasicGroup>11</BasicGroup>
+      <DateBR>17/08/1976</DateBR>
+      <Nationality>MY</Nationality>
+      <EntKey>2084474</EntKey>
+      <SummaryRpt>
+        <StatusCode>00</StatusCode>
+        <RptRetrieveFromBNM>N</RptRetrieveFromBNM>
+        <RptRetrievalDate>13/08/2023</RptRetrievalDate>
+        <Errors/>
+        <Messages/>
+        <Data>
+          <Applications>
+            <AppCnt>0</AppCnt>
+            <AppAmt>0</AppAmt>
+            <PndCnt>0</PndCnt>
+            <PndAmt>0</PndAmt>
+          </Applications>
+          <Liabilities>
+            <Borrower>
+              <AccOut>0</AccOut>
+              <AccTot>0</AccTot>
+              <AccFec>0</AccFec>
+            </Borrower>
+            <Guarantor>
+              <CfgTot>0</CfgTot>
+              <CfgFec>0</CfgFec>
+            </Guarantor>
+            <Total>
+              <Tot>0</Tot>
+              <Fec>0</Fec>
+            </Total>
+          </Liabilities>
+          <Legal>
+            <Legal>0</Legal>
+          </Legal>
+          <SpecAttn>
+            <SpecAttn>0</SpecAttn>
+          </SpecAttn>
+        </Data>
+        <CcrisSumHit/>
+      </SummaryRpt>
+      <DetailRpt>
+        <StatusCode>00</StatusCode>
+        <RptRetrieveFromBNM>N</RptRetrieveFromBNM>
+        <RptRetrievalDate>13/08/2023</RptRetrievalDate>
+        <Errors/>
+        <Messages/>
+        <Data>
+          <FromYear>2022</FromYear>
+          <ToYear>2023</ToYear>
+          <MonthOrder>
+            <M1>S</M1>
+            <M2>A</M2>
+            <M3>J</M3>
+            <M4>J</M4>
+            <M5>M</M5>
+            <M6>A</M6>
+            <M7>M</M7>
+            <M8>F</M8>
+            <M9>J</M9>
+            <M10>D</M10>
+            <M11>N</M11>
+            <M12>O</M12>
+          </MonthOrder>
+          <Loans/>
+          <SpecAttnLoans/>
+          <Applications/>
+          <Totals>
+            <LimTot>0</LimTot>
+            <BalTot>0</BalTot>
+          </Totals>
+        </Data>
+        <DerivedVariables>
+          <char015>MV01: NoCcrisHit</char015>
+          <char016>MV01: NoCcrisHit</char016>
+          <char029>MV01: NoCcrisHit</char029>
+          <char041>MV01: NoCcrisHit</char041>
+          <char055>MV01: NoCcrisHit</char055>
+          <char062>MV01: NoCcrisHit</char062>
+          <char124>MV01: NoCcrisHit</char124>
+          <char126>MV01: NoCcrisHit</char126>
+          <char188>MV01: NoCcrisHit</char188>
+          <char255>MV01: NoCcrisHit</char255>
+          <char261>MV01: NoCcrisHit</char261>
+          <char448>MV01: NoCcrisHit</char448>
+          <char531>MV01: NoCcrisHit</char531>
+          <char693>MV01: NoCcrisHit</char693>
+          <char002>MV01 - No CCRIS Hit</char002>
+          <char005>MV01 - No CCRIS Hit</char005>
+          <char034>MV01 - No CCRIS Hit</char034>
+          <char038>MV01 - No CCRIS Hit</char038>
+          <char470>MV01 - No CCRIS Hit</char470>
+          <char492>MV01 - No CCRIS Hit</char492>
+          <char510>MV01 - No CCRIS Hit</char510>
+          <char697>MV01 - No CCRIS Hit</char697>
+          <char699>MV01 - No CCRIS Hit</char699>
+        </DerivedVariables>
+        <CcrisDtlHit/>
+      </DetailRpt>
+      <SupplementaryRpt>
+        <StatusCode>00</StatusCode>
+        <RptRetrieveFromBNM>N</RptRetrieveFromBNM>
+        <RptRetrievalDate>13/08/2023</RptRetrievalDate>
+        <Errors/>
+        <Messages/>
+        <Data>
+          <Addresses>
+            <Address>
+              <Entity>2084474</Entity>
+              <Address1/>
+              <Address2/>
+              <Address3/>
+              <Address4/>
+              <Address5/>
+              <Address6>SABAH</Address6>
+              <LongAddress>SABAH</LongAddress>
+              <State_Code>10</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>88450</Post_Code>
+              <Org_Code>0351</Org_Code>
+              <Branch>14032</Branch>
+              <Application/>
+              <Create_Date>21/07/2023</Create_Date>
+            </Address>
+            <Address>
+              <Entity>2084474</Entity>
+              <Address1/>
+              <Address2/>
+              <Address3/>
+              <Address4/>
+              <Address5/>
+              <Address6>SABAH</Address6>
+              <LongAddress>SABAH</LongAddress>
+              <State_Code>10</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>88450</Post_Code>
+              <Org_Code>0345</Org_Code>
+              <Branch>10066</Branch>
+              <Application/>
+              <Create_Date>01/07/2023</Create_Date>
+            </Address>
+            <Address>
+              <Entity>2084474</Entity>
+              <Address1>THE HARDWARE TRADING SDN BHD</Address1>
+              <Address2>9 LOT 5 BLOCK G SRI KEMAJUAN</Address2>
+              <Address3>IND CTR JALAN TUARAN INANAM</Address3>
+              <Address4/>
+              <Address5>TUARAN</Address5>
+              <Address6>SABAH</Address6>
+              <LongAddress>THE HARDWARE TRADING SDN BHD, 9 LOT 5 BLOCK G SRI KEMAJUAN, IND CTR JALAN TUARAN INANAM, TUARAN, SABAH</LongAddress>
+              <State_Code>10</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>88450</Post_Code>
+              <Org_Code>0214</Org_Code>
+              <Branch>14015</Branch>
+              <Application>RLS</Application>
+              <Create_Date>09/10/2022</Create_Date>
+            </Address>
+            <Address>
+              <Entity>2084474</Entity>
+              <Address1>PO BOX 35 PENAMPANG</Address1>
+              <Address2>89507 KOTA KINABALU</Address2>
+              <Address3>SABAH</Address3>
+              <Address4>MALAYSIA</Address4>
+              <Address5/>
+              <Address6>SABAH</Address6>
+              <LongAddress>PO BOX 35 PENAMPANG, 89507 KOTA KINABALU, SABAH, MALAYSIA, SABAH</LongAddress>
+              <State_Code>10</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>89507</Post_Code>
+              <Org_Code>0222</Org_Code>
+              <Branch>14016</Branch>
+              <Application>CRE</Application>
+              <Create_Date>09/04/2022</Create_Date>
+            </Address>
+            <Address>
+              <Entity>2084474</Entity>
+              <Address1>PO BOX 35 PENAMPANG</Address1>
+              <Address2>89507 KOTA KINABALU</Address2>
+              <Address3>SABAH</Address3>
+              <Address4>MALAYSIA</Address4>
+              <Address5/>
+              <Address6>SABAH</Address6>
+              <LongAddress>PO BOX 35 PENAMPANG, 89507 KOTA KINABALU, SABAH, MALAYSIA, SABAH</LongAddress>
+              <State_Code>10</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code>89507</Post_Code>
+              <Org_Code>0356</Org_Code>
+              <Branch>10011</Branch>
+              <Application>HUB</Application>
+              <Create_Date>09/04/2022</Create_Date>
+            </Address>
+            <Address>
+              <Entity>2084474</Entity>
+              <Address1>NO 39 TAMAN STARLAND</Address1>
+              <Address2>JALAN PENAMPANG</Address2>
+              <Address3/>
+              <Address4/>
+              <Address5/>
+              <Address6>1219</Address6>
+              <LongAddress>NO 39 TAMAN STARLAND, JALAN PENAMPANG, 1219</LongAddress>
+              <State_Code>10</State_Code>
+              <ISO_Country>Malaysia</ISO_Country>
+              <Post_Code/>
+              <Org_Code>EDB</Org_Code>
+              <Branch>RE000</Branch>
+              <Application/>
+              <Create_Date>16/12/2021</Create_Date>
+            </Address>
+          </Addresses>
+          <Contacts>
+            <Contact>
+              <Entity>2084474</Entity>
+              <Contact_Type>CNT</Contact_Type>
+              <ISD_Code>0</ISD_Code>
+              <Prefix>0</Prefix>
+              <Phone_no>0128212222</Phone_no>
+              <Org_code>0356</Org_code>
+              <Branch>14019</Branch>
+              <Application>HUB</Application>
+              <Create_Date>09/04/2022</Create_Date>
+            </Contact>
+          </Contacts>
+          <Occupations>
+            <Occupation>
+              <Entity>2084474</Entity>
+              <Occ_Type>113</Occ_Type>
+              <Occupation>ADMINISTRATIVE AND COMMERCIAL MANAGERS</Occupation>
+              <Employer>HARDWARE TRADING SDN BHD</Employer>
+              <Grs_income>0</Grs_income>
+              <Freq_code/>
+              <Currency/>
+              <from_Date/>
+              <to_Date/>
+              <Org_code>0351</Org_code>
+              <Branch>14032</Branch>
+              <Application/>
+              <Create_Date>21/07/2023</Create_Date>
+            </Occupation>
+            <Occupation>
+              <Entity>2084474</Entity>
+              <Occ_Type>113</Occ_Type>
+              <Occupation>HOSPITALITY, RETAIL AND OTHER SERVICES MANAGERS</Occupation>
+              <Employer>THE HARDWARE TRADING</Employer>
+              <Grs_income>0</Grs_income>
+              <Freq_code/>
+              <Currency/>
+              <from_Date/>
+              <to_Date/>
+              <Org_code>0214</Org_code>
+              <Branch>14015</Branch>
+              <Application/>
+              <Create_Date>10/07/2023</Create_Date>
+            </Occupation>
+            <Occupation>
+              <Entity>2084474</Entity>
+              <Occ_Type>113</Occ_Type>
+              <Occupation>LEGISLATORS AND SENIOR OFFICIALS</Occupation>
+              <Employer>THE HARDWARE TRADING SB</Employer>
+              <Grs_income>0</Grs_income>
+              <Freq_code/>
+              <Currency/>
+              <from_Date/>
+              <to_Date/>
+              <Org_code>0345</Org_code>
+              <Branch>10066</Branch>
+              <Application/>
+              <Create_Date>01/07/2023</Create_Date>
+            </Occupation>
+            <Occupation>
+              <Entity>2084474</Entity>
+              <Occ_Type>113</Occ_Type>
+              <Occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</Occupation>
+              <Employer>THE HARDWARE TRADING BERHAD</Employer>
+              <Grs_income>0</Grs_income>
+              <Freq_code/>
+              <Currency/>
+              <from_Date/>
+              <to_Date/>
+              <Org_code>0214</Org_code>
+              <Branch>14015</Branch>
+              <Application>RLS</Application>
+              <Create_Date>09/10/2022</Create_Date>
+            </Occupation>
+          </Occupations>
+          <SpecialName/>
+        </Data>
+      </SupplementaryRpt>
+    </CcrisRpt>
+    <CtosRpt>
+      <CtosScoreRank>F</CtosScoreRank>
+      <Direction>P</Direction>
+      <Errors/>
+      <CtosHit/>
+      <report xmlns="http://ws.cmctos.com.my/ctosnet/response" version="4.1.0">
+        <enq_report xmlns="" id="BB-7245-20230813202416" report_type="CTOS" title="CTOS ENQUIRY">
+          <header>
+            <user id="xml_acsc2">AEON - XML TRANSACTION</user>
+            <company id="ACSC">AEON CREDIT SERVICE  (M) BHD XML TRANSACTION</company>
+            <account>ACSC02</account>
+            <tel/>
+            <fax/>
+            <enq_date>2023-08-13</enq_date>
+            <enq_time>20:24:16</enq_time>
+            <enq_status code="1">SUCCESS</enq_status>
+          </header>
+          <summary>
+            <enq_sum pcode="11" ptype="I" seq="1">
+              <name>CHUNG VUI KON</name>
+              <ic_lcno/>
+              <nic_brno>760817125417</nic_brno>
+              <stat>1010</stat>
+              <dd_index>0000</dd_index>
+              <fico_index score="538">
+                <fico_factor code="D2">There is delinquency on the accounts on credit report.</fico_factor>
+                <fico_factor code="M1">Number of accounts with delinquency on the credit report is high relative to the other applicants scored.</fico_factor>
+                <fico_factor code="K0">Time since delinquency on the credit report is too short relative to the other applicants scored.</fico_factor>
+                <fico_factor code="T5">Too many recent enquiries on the credit report.</fico_factor>
+              </fico_index>
+              <mphone_nos/>
+              <ref_no>230303100003</ref_no>
+              <dist_code/>
+              <purpose code="200">Credit evaluation/account opening on subject/directors/shareholder with consent /due diligence on AMLA compliance</purpose>
+              <include_ctos>1</include_ctos>
+              <include_trex>1</include_trex>
+              <include_ccris sum="0">1</include_ccris>
+              <include_dcheq>0</include_dcheq>
+              <include_ccris_supp>1</include_ccris_supp>
+              <include_fico>1</include_fico>
+              <confirm_entity>2084474</confirm_entity>
+              <enq_status code="1">SUCCESS</enq_status>
+              <enq_code code="4">CTOS FICO Report</enq_code>
+            </enq_sum>
+          </summary>
+          <enquiry seq="1">
+            <section_summary>
+              <ctos>
+                <bankruptcy status="0"/>
+                <legal total="0" value="0"/>
+                <legal_personal_capacity total="0" value="0"/>
+                <legal_non_personal_capacity total="0" value="0"/>
+              </ctos>
+              <tr>
+                <trex_ref negative="0" positive="0"/>
+              </tr>
+              <ccris>
+                <application approved="0" pending="0" total="0"/>
+                <facility arrears="0" total="0" value="0.00"/>
+                <special_attention accounts="0"/>
+              </ccris>
+              <dcheqs entity="0"/>
+            </section_summary>
+            <section_a data="true" title="SECTION A - IDENTITY NUMBER VERIFICATION">
+              <record rpttype="Id" seq="1">
+                <name match="1">CHUNG VUI KON</name>
+                <ic_lcno>H0921187</ic_lcno>
+                <nic_brno match="1">760817125417</nic_brno>
+                <addr>SABAH</addr>
+                <addr1>SABAH</addr1>
+                <ccris_addresses>
+                  <ccris_address date="21-07-2023">SABAH</ccris_address>
+                  <ccris_address date="01-07-2023">SABAH</ccris_address>
+                  <ccris_address date="09-10-2022">THE HARDWARE TRADING SDN BHD, 9 LOT 5 BLOCK G SRI KEMAJUAN, IND CTR JALAN TUARAN INANAM, TUARAN, SABAH</ccris_address>
+                  <ccris_address date="09-04-2022">PO BOX 35 PENAMPANG, 89507 KOTA KINABALU, SABAH, MALAYSIA, SABAH</ccris_address>
+                  <ccris_address date="09-04-2022">PO BOX 35 PENAMPANG, 89507 KOTA KINABALU, SABAH, MALAYSIA, SABAH</ccris_address>
+                  <ccris_address date="16-12-2021">NO 39 TAMAN STARLAND, JALAN PENAMPANG, 1219</ccris_address>
+                </ccris_addresses>
+                <source>CCRIS</source>
+                <nationality>MALAYSIA</nationality>
+                <birth_date>17-08-1976</birth_date>
+              </record>
+            </section_a>
+            <section_b data="true" title="SECTION B - INTERNAL LIST">
+              <history rpttype="EH" seq="1" year="2023">
+                <period month="1">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="2">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="1"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="3">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="4">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="5">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="6">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="7">
+                  <entity type="FI" value="2"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="8">
+                  <entity type="FI" value="1"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="9">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="10">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="11">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="12">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+              </history>
+              <history rpttype="EH" seq="2" year="2022">
+                <period month="1">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="2">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="3">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="4">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="5">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="6">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="7">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="8">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="9">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="10">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="11">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+                <period month="12">
+                  <entity type="FI" value="0"/>
+                  <entity type="NON-FI" value="0"/>
+                  <entity type="LAWYER" value="0"/>
+                </period>
+              </history>
+            </section_b>
+            <section_c data="true" title="SECTION C - DIRECTORSHIPS AND BUSINESS INTERESTS">
+              <record rpttype="IK" seq="1">
+                <company_name>GOLDEN STAR LBN ENTERPRISE</company_name>
+                <local>LA0017114A</local>
+                <object>MENJUAL MINUMAN RINGAN DAN MAKANAN RINGAN.</object>
+                <incdate>31-10-2017</incdate>
+                <expdate>31-10-2023</expdate>
+                <name>CHUNG VUI KON</name>
+                <ic_lcno>H0921187</ic_lcno>
+                <nic_brno>760817125417</nic_brno>
+                <addr>NO. 39, TAMAN STARLAND, JALAN PENAMPANG, 88300 KOTA KINABALU, SABAH</addr>
+                <position>PARTNER</position>
+                <cpo_date>07-02-2023</cpo_date>
+                <remark/>
+                <status>ACTIVE</status>
+              </record>
+            </section_c>
+            <section_d data="false" title="SECTION D"/>
+            <section_d2 data="false" title="SECTION D2 - SUBJECT AS PLAINTIFF"/>
+            <section_ccris data="true" title="SECTION CCRIS">
+              <summary entity_key="2084474" entity_warning="" fi_code="3905">
+                <application>
+                  <approved count="0">0.00</approved>
+                  <pending count="0">0.00</pending>
+                </application>
+                <liabilities>
+                  <borrower fec_limit="0.00" total_limit="0.00">0.00</borrower>
+                  <guarantor/>
+                </liabilities>
+                <legal status="0"/>
+                <special_attention status="0"/>
+                <special_name status="0"/>
+              </summary>
+              <derivatives>
+                <application>
+                  <date>21-03-2001</date>
+                  <facility code="CRDTCARD">Credit Card</facility>
+                </application>
+                <facilities>
+                  <secure total="0">
+                    <outstanding average="0.0" limit="0">0</outstanding>
+                  </secure>
+                  <unsecure total="0">
+                    <outstanding average="0.0" limit="0">0</outstanding>
+                  </unsecure>
+                </facilities>
+              </derivatives>
+              <applications/>
+              <accounts/>
+              <special_attention_accs/>
+            </section_ccris>
+            <section_dcheqs data="false" title=""/>
+            <section_ccris_supp data="true" title="SECTION CCRIS SUPPLEMENTARY">
+              <addresses>
+                <address>
+                  <address1/>
+                  <address2/>
+                  <address3/>
+                  <address4/>
+                  <address5/>
+                  <address6>SABAH</address6>
+                  <long_address>SABAH</long_address>
+                  <state_code>10</state_code>
+                  <country>Malaysia</country>
+                  <post_code>88450</post_code>
+                  <org code="0351"/>
+                  <branch code="14032"/>
+                  <application code=""/>
+                  <create_date>21-07-2023</create_date>
+                </address>
+                <address>
+                  <address1/>
+                  <address2/>
+                  <address3/>
+                  <address4/>
+                  <address5/>
+                  <address6>SABAH</address6>
+                  <long_address>SABAH</long_address>
+                  <state_code>10</state_code>
+                  <country>Malaysia</country>
+                  <post_code>88450</post_code>
+                  <org code="0345"/>
+                  <branch code="10066"/>
+                  <application code=""/>
+                  <create_date>01-07-2023</create_date>
+                </address>
+                <address>
+                  <address1>THE HARDWARE TRADING SDN BHD</address1>
+                  <address2>9 LOT 5 BLOCK G SRI KEMAJUAN</address2>
+                  <address3>IND CTR JALAN TUARAN INANAM</address3>
+                  <address4/>
+                  <address5>TUARAN</address5>
+                  <address6>SABAH</address6>
+                  <long_address>THE HARDWARE TRADING SDN BHD, 9 LOT 5 BLOCK G SRI KEMAJUAN, IND CTR JALAN TUARAN INANAM, TUARAN, SABAH</long_address>
+                  <state_code>10</state_code>
+                  <country>Malaysia</country>
+                  <post_code>88450</post_code>
+                  <org code="0214"/>
+                  <branch code="14015"/>
+                  <application code="RLS"/>
+                  <create_date>09-10-2022</create_date>
+                </address>
+                <address>
+                  <address1>PO BOX 35 PENAMPANG</address1>
+                  <address2>89507 KOTA KINABALU</address2>
+                  <address3>SABAH</address3>
+                  <address4>MALAYSIA</address4>
+                  <address5/>
+                  <address6>SABAH</address6>
+                  <long_address>PO BOX 35 PENAMPANG, 89507 KOTA KINABALU, SABAH, MALAYSIA, SABAH</long_address>
+                  <state_code>10</state_code>
+                  <country>Malaysia</country>
+                  <post_code>89507</post_code>
+                  <org code="0222"/>
+                  <branch code="14016"/>
+                  <application code="CRE"/>
+                  <create_date>09-04-2022</create_date>
+                </address>
+                <address>
+                  <address1>PO BOX 35 PENAMPANG</address1>
+                  <address2>89507 KOTA KINABALU</address2>
+                  <address3>SABAH</address3>
+                  <address4>MALAYSIA</address4>
+                  <address5/>
+                  <address6>SABAH</address6>
+                  <long_address>PO BOX 35 PENAMPANG, 89507 KOTA KINABALU, SABAH, MALAYSIA, SABAH</long_address>
+                  <state_code>10</state_code>
+                  <country>Malaysia</country>
+                  <post_code>89507</post_code>
+                  <org code="0356"/>
+                  <branch code="10011"/>
+                  <application code="HUB"/>
+                  <create_date>09-04-2022</create_date>
+                </address>
+                <address>
+                  <address1>NO 39 TAMAN STARLAND</address1>
+                  <address2>JALAN PENAMPANG</address2>
+                  <address3/>
+                  <address4/>
+                  <address5/>
+                  <address6>1219</address6>
+                  <long_address>NO 39 TAMAN STARLAND, JALAN PENAMPANG, 1219</long_address>
+                  <state_code>10</state_code>
+                  <country>Malaysia</country>
+                  <post_code/>
+                  <org code="EDB"/>
+                  <branch code="RE000"/>
+                  <application code=""/>
+                  <create_date>16-12-2021</create_date>
+                </address>
+              </addresses>
+              <contacts>
+                <contact>
+                  <contact_type>CNT</contact_type>
+                  <isd_code>0</isd_code>
+                  <prefix>0</prefix>
+                  <phone_no>0128212222</phone_no>
+                  <org code="0356"/>
+                  <branch code="14019"/>
+                  <application code="HUB"/>
+                  <create_date>09-04-2022</create_date>
+                </contact>
+              </contacts>
+              <occupations>
+                <occupation>
+                  <occ_type>113</occ_type>
+                  <occupation>ADMINISTRATIVE AND COMMERCIAL MANAGERS</occupation>
+                  <employer>HARDWARE TRADING SDN BHD</employer>
+                  <from_date/>
+                  <to_date/>
+                  <org code="0351"/>
+                  <branch code="14032"/>
+                  <application code=""/>
+                  <create_date>21-07-2023</create_date>
+                </occupation>
+                <occupation>
+                  <occ_type>113</occ_type>
+                  <occupation>HOSPITALITY, RETAIL AND OTHER SERVICES MANAGERS</occupation>
+                  <employer>THE HARDWARE TRADING</employer>
+                  <from_date/>
+                  <to_date/>
+                  <org code="0214"/>
+                  <branch code="14015"/>
+                  <application code=""/>
+                  <create_date>10-07-2023</create_date>
+                </occupation>
+                <occupation>
+                  <occ_type>113</occ_type>
+                  <occupation>LEGISLATORS AND SENIOR OFFICIALS</occupation>
+                  <employer>THE HARDWARE TRADING SB</employer>
+                  <from_date/>
+                  <to_date/>
+                  <org code="0345"/>
+                  <branch code="10066"/>
+                  <application code=""/>
+                  <create_date>01-07-2023</create_date>
+                </occupation>
+                <occupation>
+                  <occ_type>113</occ_type>
+                  <occupation>BUSINESS AND ADMINISTRATIONS ASSOCIATE PROFESSIONALS</occupation>
+                  <employer>THE HARDWARE TRADING BERHAD</employer>
+                  <from_date/>
+                  <to_date/>
+                  <org code="0214"/>
+                  <branch code="14015"/>
+                  <application code="RLS"/>
+                  <create_date>09-10-2022</create_date>
+                </occupation>
+              </occupations>
+            </section_ccris_supp>
+          </enquiry>
+        </enq_report>
+        <trex xmlns="" status="0">
+          <subject_request>
+            <party_type>I</party_type>
+            <name>CHUNG VUI KON</name>
+            <iclc/>
+            <nicbr>760817125417</nicbr>
+            <date_requested>13-08-2023 20:24:16</date_requested>
+            <date_completed>13-08-2023 20:24:16</date_completed>
+            <requester_id/>
+            <requester_name/>
+            <requester_comp_code>ACSC</requester_comp_code>
+            <requester_account>ACSC02</requester_account>
+          </subject_request>
+        </trex>
+        <eil_report xmlns="" status="0">
+          <eil_request>
+            <party_type>I</party_type>
+            <name>CHUNG VUI KON</name>
+            <iclc/>
+            <nicbr>760817125417</nicbr>
+            <date_requested>13-08-2023 20:24:22</date_requested>
+            <date_completed>13-08-2023 20:24:22</date_completed>
+            <requester_id>xml_acsc2</requester_id>
+            <requester_name>AEON - XML TRANSACTION</requester_name>
+            <requester_comp_code>ACSC</requester_comp_code>
+            <requester_comp_name>AEON CREDIT SERVICE  (M) BHD XML TRANSACTION</requester_comp_name>
+            <requester_account>ACSC02</requester_account>
+          </eil_request>
+        </eil_report>
+      </report>
+    </CtosRpt>
+    <FisRpt>
+      <Direction>P</Direction>
+      <Errors/>
+      <FisHit/>
+    </FisRpt>
+    <RamciRpt>
+      <Direction>P</Direction>
+      <RamciHit/>
+      <Errors/>
+    </RamciRpt>
+  </Data>
+</Response>
